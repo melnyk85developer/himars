@@ -42,7 +42,7 @@ class AppContent extends React.Component {
                                 <section className='section_1'>
                                     <Routes>
                                         <Route path={routeAuthorization()} element={<Authorization />}/>
-                                        <Route path={"himars-demo"} element={<ProfileContainer />}/>
+                                        <Route path="himars-demo/"element={<ProfileContainer />}/>
                                         <Route path={routeProfile()} element={<ProfileContainer />}/>
                                         <Route path={routeUserProfile()} element={<UserProfileContainer />}/>
                                         <Route path={routeDialog()} element={<Dialog />}/>
