@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/melnyk85developer/static/css/main.76ad7e2e.css",
-    "main.js": "/melnyk85developer/static/js/main.317a38e5.js",
+    "main.js": "/melnyk85developer/static/js/main.994de26c.js",
     "static/media/loader.gif": "/melnyk85developer/static/media/loader.b2a8fa3d8baba9fc720f.gif",
     "static/media/fon_avatars.png": "/melnyk85developer/static/media/fon_avatars.76e609f2cfba0175db7b.png",
     "static/media/R_center_Sidebar.png": "/melnyk85developer/static/media/R_center_Sidebar.0f8d154b371121f422bd.png",
@@ -14,10 +14,10 @@
     "static/media/L_Top_Sidebar.png": "/melnyk85developer/static/media/L_Top_Sidebar.89c5a7400ca35de68434.png",
     "index.html": "/melnyk85developer/index.html",
     "main.76ad7e2e.css.map": "/melnyk85developer/static/css/main.76ad7e2e.css.map",
-    "main.317a38e5.js.map": "/melnyk85developer/static/js/main.317a38e5.js.map"
+    "main.994de26c.js.map": "/melnyk85developer/static/js/main.994de26c.js.map"
   },
   "entrypoints": [
     "static/css/main.76ad7e2e.css",
-    "static/js/main.317a38e5.js"
+    "static/js/main.994de26c.js"
   ]
 }
