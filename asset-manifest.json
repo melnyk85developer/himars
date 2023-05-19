@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/himars-demo/static/css/main.073c9b0a.css",
-    "main.js": "/himars-demo/static/js/main.f73aeea5.js",
+    "main.css": "/himars-demo/static/css/main.3a4e9e94.css",
+    "main.js": "/himars-demo/static/js/main.a3ac0c41.js",
     "static/js/787.2bf0a13e.chunk.js": "/himars-demo/static/js/787.2bf0a13e.chunk.js",
-    "static/media/logo.gif": "/himars-demo/static/media/logo.4e62bb5f2a3d981d88df.gif",
+    "static/media/bg.gif": "/himars-demo/static/media/bg.4e62bb5f2a3d981d88df.gif",
     "index.html": "/himars-demo/index.html",
-    "main.073c9b0a.css.map": "/himars-demo/static/css/main.073c9b0a.css.map",
-    "main.f73aeea5.js.map": "/himars-demo/static/js/main.f73aeea5.js.map",
+    "main.3a4e9e94.css.map": "/himars-demo/static/css/main.3a4e9e94.css.map",
+    "main.a3ac0c41.js.map": "/himars-demo/static/js/main.a3ac0c41.js.map",
     "787.2bf0a13e.chunk.js.map": "/himars-demo/static/js/787.2bf0a13e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.f73aeea5.js"
+    "static/css/main.3a4e9e94.css",
+    "static/js/main.a3ac0c41.js"
   ]
 }
