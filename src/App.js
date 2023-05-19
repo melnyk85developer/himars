@@ -1,13 +1,19 @@
-import logo from './logo.gif';
+import bg from "./bg.gif"
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="logo" alt="logo" />
-        <h1>Ёбаный насос</h1>
-      </header>
+    <div className="wrapperContent">
+      <section className="secton">
+        <div className="screen_1">
+          <img src={bg} alt={bg} className="bGsectionL"/>
+          <img src={bg} alt={bg} className="bGsectionR"/>
+        </div>
+        {/* <div className="screen_2">
+          <img src={bg} alt={bg} className="bGsection"/>
+          <img src={bg} alt={bg} className="bGsection"/>
+        </div> */}
+      </section>
     </div>
   );
 }
