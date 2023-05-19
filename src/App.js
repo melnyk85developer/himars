@@ -8,6 +8,7 @@ function App() {
         <div className="screen_1">
           <img src={bg} alt={bg} className="bGsectionL"/>
           <img src={bg} alt={bg} className="bGsectionR"/>
+          
         </div>
         {/* <div className="screen_2">
           <img src={bg} alt={bg} className="bGsection"/>
