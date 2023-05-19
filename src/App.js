@@ -1,7 +1,7 @@
 import bg from "./bg.gif"
 import './App.css';
 
-function App() {
+const App = () => {
   return (
     <div className="wrapperContent">
       <section className="secton">

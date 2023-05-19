@@ -1,0 +1,108 @@
+.wrapperUsersPagination {
+    position: relative;
+    margin: 3px;
+    padding-top: 8px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+.active {
+    font-weight: bold;
+    border-bottom: 1px solid #eee;
+}
+.preloader {
+    width: 40px;
+    height: 40px;
+}
+.wrapUsersItem {
+    margin: 3px;
+    padding: 5px;
+    width: 99%;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+.usersItem {
+    display: flex;
+    height: 80px;
+}
+.wrapUsersItem:hover {
+    background-color: #656565;
+}
+.wrapUserBlock_1 {
+    width: 30%;
+    height: 100px;
+}
+.wrapUsersAvatar {
+    width: 60px;
+}
+.usersAvatar {
+    margin-bottom: 5px;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+}
+.wrapButton {
+    margin-top: 5px;
+}
+.btnFriendsTrue {
+    width: 230px;
+    padding: 5px;
+    border-radius: 8px;
+    background-color: #454545;
+    color: #e2e2e2;
+}
+.userData {
+    text-align: left;
+}
+.wrapUserBlock_2 {
+    width: 160px;
+    margin-top: 10px;
+}
+.wrapUserBlock_2 p {
+    text-align: left;
+    font-size: 16px;
+}
+.userName {
+    display: inline;
+    width: 100%;
+    margin-bottom: 5px;
+}
+.wrapAllButton {
+    display: flex;
+}
+.wrapBtnMsg {
+    margin: 5px 0 0 15px;
+}
+.wrapBtnMsg button {
+    width: 230px;
+    margin-right: -40px;
+    padding: 5px;
+    background-color: #454545;
+    color: #e2e2e2;
+    border-radius: 8px;
+}
+.wrapCountryCity {
+    width: 50%;
+    margin-top: 10px;
+}
+.wrapCountryCity p {
+    text-align: left;
+    font-size: 16px;
+}
+.userCountry {
+    margin-bottom: 5px;
+    color: #e2e2e2;
+}
+.userCity {
+    margin-bottom: 15px;
+    color: #e2e2e2;
+}
+.userFamilyStatus {
+    width: 380px;
+    margin-top: -15px;
+}
+.userFamilyStatus p {
+    font-size: 16px;
+    margin: 20px 0 0 0px;
+    color: #D55612;
+}
