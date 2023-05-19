@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/himars-demo/static/css/main.073c9b0a.css",
-    "main.js": "/himars-demo/static/js/main.6f5bdaec.js",
+    "main.js": "/himars-demo/static/js/main.f73aeea5.js",
     "static/js/787.2bf0a13e.chunk.js": "/himars-demo/static/js/787.2bf0a13e.chunk.js",
-    "static/media/logo.svg": "/himars-demo/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/logo.gif": "/himars-demo/static/media/logo.4e62bb5f2a3d981d88df.gif",
     "index.html": "/himars-demo/index.html",
     "main.073c9b0a.css.map": "/himars-demo/static/css/main.073c9b0a.css.map",
-    "main.6f5bdaec.js.map": "/himars-demo/static/js/main.6f5bdaec.js.map",
+    "main.f73aeea5.js.map": "/himars-demo/static/js/main.f73aeea5.js.map",
     "787.2bf0a13e.chunk.js.map": "/himars-demo/static/js/787.2bf0a13e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.6f5bdaec.js"
+    "static/js/main.f73aeea5.js"
   ]
 }
