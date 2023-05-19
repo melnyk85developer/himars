@@ -1,16 +1,23 @@
 {
   "files": {
-    "main.css": "/himars-demo/static/css/main.3a4e9e94.css",
-    "main.js": "/himars-demo/static/js/main.a3ac0c41.js",
-    "static/js/787.2bf0a13e.chunk.js": "/himars-demo/static/js/787.2bf0a13e.chunk.js",
-    "static/media/bg.gif": "/himars-demo/static/media/bg.4e62bb5f2a3d981d88df.gif",
-    "index.html": "/himars-demo/index.html",
-    "main.3a4e9e94.css.map": "/himars-demo/static/css/main.3a4e9e94.css.map",
-    "main.a3ac0c41.js.map": "/himars-demo/static/js/main.a3ac0c41.js.map",
-    "787.2bf0a13e.chunk.js.map": "/himars-demo/static/js/787.2bf0a13e.chunk.js.map"
+    "main.css": "/melnyk85developer/static/css/main.76ad7e2e.css",
+    "main.js": "/melnyk85developer/static/js/main.317a38e5.js",
+    "static/media/loader.gif": "/melnyk85developer/static/media/loader.b2a8fa3d8baba9fc720f.gif",
+    "static/media/fon_avatars.png": "/melnyk85developer/static/media/fon_avatars.76e609f2cfba0175db7b.png",
+    "static/media/R_center_Sidebar.png": "/melnyk85developer/static/media/R_center_Sidebar.0f8d154b371121f422bd.png",
+    "static/media/L_center_Sidebar.png": "/melnyk85developer/static/media/L_center_Sidebar.69d7bdaa1c1b2a7956fe.png",
+    "static/media/bottom_center_Sidebar.png": "/melnyk85developer/static/media/bottom_center_Sidebar.537a7e990e324ab9100b.png",
+    "static/media/Top_center_Sidebar.png": "/melnyk85developer/static/media/Top_center_Sidebar.fe5016ab2f60c689505d.png",
+    "static/media/R_Top_Sidebar.png": "/melnyk85developer/static/media/R_Top_Sidebar.9238c1edd7d274c0c2eb.png",
+    "static/media/L_Bottom_Sidebar.png": "/melnyk85developer/static/media/L_Bottom_Sidebar.b1ef209e6adc0066cfaf.png",
+    "static/media/R_Bottom_Sidebar.png": "/melnyk85developer/static/media/R_Bottom_Sidebar.be514146e8608d5fa48f.png",
+    "static/media/L_Top_Sidebar.png": "/melnyk85developer/static/media/L_Top_Sidebar.89c5a7400ca35de68434.png",
+    "index.html": "/melnyk85developer/index.html",
+    "main.76ad7e2e.css.map": "/melnyk85developer/static/css/main.76ad7e2e.css.map",
+    "main.317a38e5.js.map": "/melnyk85developer/static/js/main.317a38e5.js.map"
   },
   "entrypoints": [
-    "static/css/main.3a4e9e94.css",
-    "static/js/main.a3ac0c41.js"
+    "static/css/main.76ad7e2e.css",
+    "static/js/main.317a38e5.js"
   ]
 }
