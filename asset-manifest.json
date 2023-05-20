@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/himars/static/css/main.43d074ce.css",
-    "main.js": "/himars/static/js/main.d918fe02.js",
+    "main.js": "/himars/static/js/main.c80427e5.js",
     "static/media/loader.gif": "/himars/static/media/loader.b2a8fa3d8baba9fc720f.gif",
     "static/media/fon_avatars.png": "/himars/static/media/fon_avatars.76e609f2cfba0175db7b.png",
     "static/media/R_center_Sidebar.png": "/himars/static/media/R_center_Sidebar.0f8d154b371121f422bd.png",
@@ -14,10 +14,10 @@
     "static/media/L_Top_Sidebar.png": "/himars/static/media/L_Top_Sidebar.89c5a7400ca35de68434.png",
     "index.html": "/himars/index.html",
     "main.43d074ce.css.map": "/himars/static/css/main.43d074ce.css.map",
-    "main.d918fe02.js.map": "/himars/static/js/main.d918fe02.js.map"
+    "main.c80427e5.js.map": "/himars/static/js/main.c80427e5.js.map"
   },
   "entrypoints": [
     "static/css/main.43d074ce.css",
-    "static/js/main.d918fe02.js"
+    "static/js/main.c80427e5.js"
   ]
 }
