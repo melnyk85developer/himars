@@ -5,7 +5,7 @@ const instance = axios.create({
     baseURL: 'https://social-network.samuraijs.com/api/1.0/',
     // baseURL: 'https://63bb6f93cf99234bfa5b1191.mockapi.io/users/',
     headers: {
-        "API-KEY": "d8e4fa40-a06b-4fa9-ae64-40c6d459c6cd"
+        "API-KEY": "d84c187e-a024-40d1-aa18-965665532015"
     }
 })
 export const usersAPI = {
