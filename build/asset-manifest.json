@@ -1,15 +1,23 @@
 {
   "files": {
-    "main.css": "/himars/static/css/main.cf6640b1.css",
-    "main.js": "/himars/static/js/main.b6cf4f3c.js",
-    "static/js/787.7acf9719.chunk.js": "/himars/static/js/787.7acf9719.chunk.js",
+    "main.css": "/himars/static/css/main.43d074ce.css",
+    "main.js": "/himars/static/js/main.d918fe02.js",
+    "static/media/loader.gif": "/himars/static/media/loader.b2a8fa3d8baba9fc720f.gif",
+    "static/media/fon_avatars.png": "/himars/static/media/fon_avatars.76e609f2cfba0175db7b.png",
+    "static/media/R_center_Sidebar.png": "/himars/static/media/R_center_Sidebar.0f8d154b371121f422bd.png",
+    "static/media/L_center_Sidebar.png": "/himars/static/media/L_center_Sidebar.69d7bdaa1c1b2a7956fe.png",
+    "static/media/bottom_center_Sidebar.png": "/himars/static/media/bottom_center_Sidebar.537a7e990e324ab9100b.png",
+    "static/media/Top_center_Sidebar.png": "/himars/static/media/Top_center_Sidebar.fe5016ab2f60c689505d.png",
+    "static/media/R_Top_Sidebar.png": "/himars/static/media/R_Top_Sidebar.9238c1edd7d274c0c2eb.png",
+    "static/media/L_Bottom_Sidebar.png": "/himars/static/media/L_Bottom_Sidebar.b1ef209e6adc0066cfaf.png",
+    "static/media/R_Bottom_Sidebar.png": "/himars/static/media/R_Bottom_Sidebar.be514146e8608d5fa48f.png",
+    "static/media/L_Top_Sidebar.png": "/himars/static/media/L_Top_Sidebar.89c5a7400ca35de68434.png",
     "index.html": "/himars/index.html",
-    "main.cf6640b1.css.map": "/himars/static/css/main.cf6640b1.css.map",
-    "main.b6cf4f3c.js.map": "/himars/static/js/main.b6cf4f3c.js.map",
-    "787.7acf9719.chunk.js.map": "/himars/static/js/787.7acf9719.chunk.js.map"
+    "main.43d074ce.css.map": "/himars/static/css/main.43d074ce.css.map",
+    "main.d918fe02.js.map": "/himars/static/js/main.d918fe02.js.map"
   },
   "entrypoints": [
-    "static/css/main.cf6640b1.css",
-    "static/js/main.b6cf4f3c.js"
+    "static/css/main.43d074ce.css",
+    "static/js/main.d918fe02.js"
   ]
 }
