@@ -21,7 +21,7 @@ const AppContent = (props) => {
                     </div>
                 <Routes>
                     <Route path="/profile" element={<Profile/>}/>
-                    <Route path="/" element={<Home/>}/>
+                    <Route path="/home" element={<Home/>}/>
                     <Route to={{
                         path: <Home/>
                     }}/>
