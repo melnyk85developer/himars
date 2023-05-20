@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/himars/static/css/main.cf6640b1.css",
+    "main.js": "/himars/static/js/main.b6cf4f3c.js",
+    "static/js/787.7acf9719.chunk.js": "/himars/static/js/787.7acf9719.chunk.js",
+    "index.html": "/himars/index.html",
+    "main.cf6640b1.css.map": "/himars/static/css/main.cf6640b1.css.map",
+    "main.b6cf4f3c.js.map": "/himars/static/js/main.b6cf4f3c.js.map",
+    "787.7acf9719.chunk.js.map": "/himars/static/js/787.7acf9719.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cf6640b1.css",
+    "static/js/main.b6cf4f3c.js"
+  ]
+}
