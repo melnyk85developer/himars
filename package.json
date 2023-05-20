@@ -1,8 +1,8 @@
 {
-  "name": "my-app",
+  "name": "himars",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://melnyk85developer.github.io/himars-demo/",
+  "homepage": "https://melnyk85developer.github.io/himars/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -12,9 +12,10 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-redux": "^8.0.5",
-    "react-router-dom": "^6.3.0",
+    "react-router-dom": "^6.11.2",
     "react-scripts": "5.0.1",
     "redux": "^4.2.1",
+    "redux-devtools-extension": "^2.13.9",
     "redux-form": "^8.3.10",
     "redux-thunk": "^2.4.2",
     "reselect": "^4.1.8",
@@ -48,7 +49,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^5.0.0",
-    "react-test-renderer": "^18.2.0"
+    "gh-pages": "^5.0.0"
   }
 }
