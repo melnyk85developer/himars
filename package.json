@@ -2,7 +2,7 @@
   "name": "himars",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://melnyk85developer.github.io/melnyk85developer/himars/",
+  "homepage": "https://melnyk85developer.github.io/himars/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
