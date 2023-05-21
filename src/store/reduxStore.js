@@ -2,7 +2,6 @@ import { applyMiddleware, combineReducers, compose, createStore } from "redux";
 import thunkMiddleware from "redux-thunk";
 import { reducer as formReducer } from 'redux-form'
 import profileReducer from "./profileReducer";
-import userProfileReducer from "./userProfileReducer";
 import messagesReducer from "./messagesReducer";
 import friendsReducer from "./friendsReducer";
 import usersReducer from "./usersReducer";
@@ -13,7 +12,6 @@ import appContentReducer from "./appContentReducer";
 let reducers = combineReducers({
     // sidebar: sidebarReducer,
     profilePage: profileReducer,
-    userProfilePage: userProfileReducer,
     messagesPage: messagesReducer,
     friendsPage: friendsReducer,
     usersPage: usersReducer,

@@ -1,12 +1,12 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { routeMain as  routeUserProfile} from "pages/UserProfile";
+import { routeMain as  routeProfile} from "pages/Profile";
 import "./styles.scss";
 
 const friendItem = (props) => {
     return (
         <div className="wrapFriendsItem">
-            <NavLink to={routeUserProfile(props.friends.id)}>
+            <NavLink to={routeProfile(props.friends.id)}>
                 <div className="friendsItem">
                     <img className="friendsAvatar" src={props.friends.avatar} alt="ava"/>
                     <li className="friendsItem"><p>{props.friends.name}</p></li>

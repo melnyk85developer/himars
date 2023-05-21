@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { routeMain as  routeUserProfile} from "pages/UserProfile";
+import { routeMain as  routeProfile} from "pages/Profile";
 import userPhoto from "../../../assets/user.png";
 import "./styles.scss";
 
@@ -9,7 +9,7 @@ const UsersItem = (props) => {
         <section className="wrapUsersItem">
             <div className="usersItem">
                 <div className="wrapUserBlock_1">
-                    <NavLink to={routeUserProfile(props.user.id)} className="navLink">
+                    <NavLink to={routeProfile(props.user.id)} className="navLink">
                         <div className="wrapUsersAvatar">
                             <img onClick={props.userDetailPage} 
                                  src={ props.user.photos.small != null 

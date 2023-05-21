@@ -3,7 +3,6 @@ import { Routes, Route} from 'react-router-dom';
 import { withSuspense } from '../../hoc/withSuspense';
 import Authorization, { routeMain as routeAuthorization } from 'pages/Authorization/authorization';
 import ProfileContainer, { routeMain as routeProfile }  from '../../pages/Profile/ProfileContainer';
-import UserProfileContainer, { routeMain as routeUserProfile } from 'pages/UserProfile/UserProfileContainer';
 import Dialog, { routeMain as routeDialog } from '../../pages/Dialog';
 import UsersContainer, { routeMain as routeUsers } from 'pages/Users/usersContainer';
 import MessagesContainer , { routeMain as routeMessages }  from '../../pages/Messages/MessagesContainer';
@@ -43,7 +42,6 @@ class AppContent extends React.Component {
                                     <Routes>
                                         <Route path={routeAuthorization()} element={<Authorization />}/>
                                         <Route path={routeProfile()} element={<ProfileContainer />}/>
-                                        <Route path={routeUserProfile()} element={<UserProfileContainer />}/>
                                         <Route path={routeDialog()} element={<Dialog />}/>
                                         <Route path={routeUsers()} element={<UsersContainer />}/>
                                         <Route path={routeMessages()} element={<MessagesContainer /> }/>

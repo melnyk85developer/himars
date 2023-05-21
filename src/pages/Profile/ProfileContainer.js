@@ -1,33 +1,45 @@
 import React, { useEffect } from "react";
 import { compose } from "redux";
 import { connect } from "react-redux";
+import { useParams } from "react-router-dom";
 import { getProfile, getStatus, updateStatus } from "store/profileReducer";
 import { withAuthRedirect } from "hoc/withAuthRedirect";
 import Profile from ".";
 import routeMain  from './routes';
 
-const ProfileContainer = React.memo(props => {
+const ProfileContainer = (props) => {
+    const {id} = useParams();
+    console.log(id)
 
-    let userId = props.userId;
+    let refreshProfile = (id) => {
+        let userId = id;
+        console.log("User ID " + id)
 
-    if(!userId){
-        userId = 28829
-        // props.authorizedUserId;
-        if(!userId){
-            props.history.push("/authorization")
+        if(id === ":id"){
+            userId = 28829
+            if(!userId){
+                props.history.push("/authorization")
+            }
+            console.log("User ID " + userId)
+            
+            props.getProfile(userId)
+            props.getStatus(userId)
+        }else{
+            props.getProfile(id)
+            props.getStatus(userId)
         }
     }
-    console.log("User ID " + props.authorizedUserId)
-
     useEffect(() => {
-        props.getProfile(userId)
-        props.getStatus(userId)
-    }, [])
-
-    // props.getProfile(userId)
-    
+        refreshProfile(id)
+    }, [id])
+    // const isowner = (userId) => {
+    //     if(!userId){
+    //         return undefined
+    //     }
+    // }
+    // isowner={isowner(userId)} 
     return <Profile status={props.status} updateStatus={props.updateStatus} profile={props.profile}/>
-})
+}
 let mapStateToProps = (state) => ({
     profile: state.profilePage.profile,
     status: state.profilePage.status,
