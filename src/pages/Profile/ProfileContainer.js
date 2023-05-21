@@ -9,7 +9,7 @@ import routeMain  from './routes';
 
 const ProfileContainer = (props) => {
     const {id} = useParams();
-    console.log(id)
+    console.log(props.profile)
 
     let refreshProfile = (id) => {
         let userId = id;
@@ -21,7 +21,7 @@ const ProfileContainer = (props) => {
                 props.history.push("/authorization")
             }
             console.log("User ID " + userId)
-            
+
             props.getProfile(userId)
             props.getStatus(userId)
         }else{

@@ -24,18 +24,6 @@ export const usersAPI = {
         return instance.delete(`follow/${id}`
     )}
 }
-export const userProfileAPI = {
-    getUserProfile(userId){
-        return instance.get(`profile/${userId}`);
-    },
-    getStatus(userId){
-        return instance.get(`profile/status/${userId}`);
-    },
-    updateStatus(status){
-        return instance.put(`profile/status`, {status: status});
-    }
-}
-
 export const profileAPI = {
     getProfile(userId){
         return instance.get(`profile/${userId}`);
@@ -47,21 +35,6 @@ export const profileAPI = {
         return instance.put(`profile/status`, {status: status});
     }
 }
-
-// export const profileAPI = {
-//     getProfile(){
-//         return instance.get(`profile/28829`);
-//     },
-//     getStatus(){
-//         return instance.get(`profile/status/28829`);
-//     },
-//     updateStatus(status){
-//         return instance.put(`profile/status`, {status: status});
-//     }
-// }
-
-
-
 export const friendsAPI = {
     getFriends() {
         const options = {
@@ -82,12 +55,3 @@ export const authAPI = {
         return instance.delete(`auth/login`);
     }
 }
-
-// const getUsers = () => {
-//     const options = {
-//         method: 'GET',
-//         url: 'https://social-network.samuraijs.com/api/1.0/users'
-//     }
-//     return axios.request(options);
-// }
-// export default getUsers;

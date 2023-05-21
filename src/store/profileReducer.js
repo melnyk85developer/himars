@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { v1 as uuidv1 } from 'uuid';
 import { profileAPI } from 'services/getUsers';
 import HiMarsMoks from "../fixtures/HiMarsMoks";

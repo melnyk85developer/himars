@@ -1,6 +1,6 @@
 import React, { Suspense } from 'react';
 import { Routes, Route} from 'react-router-dom';
-import { withSuspense } from '../../hoc/withSuspense';
+// import { withSuspense } from '../../hoc/withSuspense';
 import Authorization, { routeMain as routeAuthorization } from 'pages/Authorization/authorization';
 import ProfileContainer, { routeMain as routeProfile }  from '../../pages/Profile/ProfileContainer';
 import Dialog, { routeMain as routeDialog } from '../../pages/Dialog';
