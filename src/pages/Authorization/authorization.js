@@ -30,7 +30,7 @@ const Authorization = (props) => {
         props.login(formData.email, formData.password, formData.rememberMe)
     }
     if(props.isAuth){
-        return <Navigate to={routeProfile()} />
+        return <Navigate to={routeProfile(props.authorizedUserId)} />
     }
     return (
         <>
@@ -41,7 +41,8 @@ const Authorization = (props) => {
     )
 }
 const mapStateToProps = (state) => ({
-    isAuth: state.auth.isAuth
+    isAuth: state.auth.isAuth,
+    authorizedUserId: state.auth.id
 })
 export {routeMain};
 export default connect(mapStateToProps, {login})(Authorization);

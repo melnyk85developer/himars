@@ -12,13 +12,12 @@ import { routeMain as routeUsers } from './../../pages/Users/usersContainer';
 import "./styles.scss";
 
 const LeftNav = (props) => {
-    console.log("Menu " + props.authorizedUserId)
     return (
         <nav className="Left_nav">
             <div className="Left_menu">
                 <div className="LSidebar_Nav">
                     <ul>
-                        <li><NavLink to={routeProfile(props.authorizedUserId)} >Profile</NavLink></li>
+                        <li><NavLink to={routeProfile()} >Profile</NavLink></li>
                         <li><NavLink to={routeMessages()} >Message</NavLink></li>
                         <li><NavLink to={routeFriends()} >Friends</NavLink></li>
                         <li><NavLink to={routeMusic()} >Music</NavLink></li>

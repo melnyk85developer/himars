@@ -20,7 +20,11 @@ const Profile = (props) => {
                     <LSidebar 
                         content={
                             <> 
-                                <Avatar key={props.profile.id} avatar={props.profile.photos.small} />
+                                <Avatar 
+                                    key={props.profile.id}
+                                    isOwner={props.isOwner}
+                                    savePhoto={props.savePhoto}
+                                    avatar={props.profile.photos.small} />
                                 <div className="wrapWidgetFriendsProfile">
                                     <WidgetFriends friends={store.getState().profilePage.friends} />
                                 </div>
