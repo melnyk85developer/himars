@@ -9,23 +9,20 @@ import routeMain  from './routes';
 
 const ProfileContainer = (props) => {
     const {id} = useParams();
-    console.log(props.profile)
 
     let refreshProfile = (id) => {
         let userId = id;
-        console.log("User ID " + id)
 
         if(id === ":id"){
-            userId = 28829
+            userId = props.authorizedUserId
+
             if(!userId){
                 props.history.push("/authorization")
             }
-            console.log("User ID " + userId)
-
             props.getProfile(userId)
             props.getStatus(userId)
         }else{
-            props.getProfile(id)
+            props.getProfile(userId)
             props.getStatus(userId)
         }
     }
@@ -43,7 +40,7 @@ const ProfileContainer = (props) => {
 let mapStateToProps = (state) => ({
     profile: state.profilePage.profile,
     status: state.profilePage.status,
-    authorizedUserId: state.auth.userId,
+    authorizedUserId: state.auth.id,
     isAuth: state.auth.isAuth
 })
 export {routeMain}
