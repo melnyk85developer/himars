@@ -19,7 +19,7 @@ const Avatar = (props) => {
                                 <img className="avatar" src={
                                     props.avatar != null ? props.avatar : userPhoto
                                     } alt={props.avatar}/>
-                                { props.isOwner && <input onChange={onMainPhotoSelected} type={"file"} /> }
+                                { props.isOwner && <input className="inputUploadAvatar" onChange={onMainPhotoSelected} type={"file"} /> }
                             </div>
                         </div>
                     </div>
