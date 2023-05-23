@@ -22,53 +22,59 @@ import './styles.scss';
 const Video = React.lazy(() => import('../../pages/Video'))
 
 const AppContent = (props) => {
+
     useEffect(() => {
         props.initializeAppContent()
     }, [])
-    if(!props.initialized){
-        return <Preloader />
-    }
-    return (
-        <div className="AppContent">
-            <HeaderContainer />
-            <div className="wrapper_content">
-                <div className="wrapper_nav"><div className="top_menu"></div></div>
-                <div className="wrapper">
-                    <div className='content'>
-                        <LeftNav />
-                        <div className="wrapSection">
-                            <section className='section_1'>
-                                <Routes>
-                                    <Route path={routeAuthorization()} element={<Authorization />}/>
-                                    <Route path={routeProfile()} element={<ProfileContainer />}/>
-                                    <Route path={routeDialog()} element={<Dialog />}/>
-                                    <Route path={routeUsers()} element={<UsersContainer />}/>
-                                    <Route path={routeMessages()} element={<MessagesContainer /> }/>
-                                    <Route path={routeFriends()} element={<FriendsContainer />}/>
-                                    <Route path={routeMusic()} element={<Music/>}/>
-                                    <Route path={routeShops()} element={<Shops/>}/>
-                                    {/* <Route path={routeShops()} element={withSuspense(Shops)}/> */}
-                                    {/* <Route path={routeVideo()} element={<Video/>}/> */}
-                                    <Route path={routeVideo()} element={
-                                            <Suspense fallback={<div>Loading...</div>}>
-                                                <Video/>
-                                            </Suspense>
-                                    }/> 
-                                    <Route path={routeHome()} element={<Home/>}/>
-                                    <Route path={routeNews()} element={<News/>}/>
-                                    <Route path={routeContacts()} element={<Contacts/>}/>
-                                    <Route to={{
-                                        path: <Home/>
-                                    }}/>
-                                </Routes>
-                            </section>
+
+    // componentDidMount(){
+    //     this.props.initializeAppContent()
+    // }
+
+        if(!props.initialized){
+            return <Preloader />
+        }
+        return (
+            <div className="AppContent">
+                <HeaderContainer />
+                <div className="wrapper_content">
+                    <div className="wrapper_nav"><div className="top_menu"></div></div>
+                    <div className="wrapper">
+                        <div className='content'>
+                            <LeftNav />
+                            <div className="wrapSection">
+                                <section className='section_1'>
+                                    <Routes>
+                                        <Route path={routeAuthorization()} element={<Authorization />}/>
+                                        <Route path={routeProfile()} element={<ProfileContainer />}/>
+                                        <Route path={routeDialog()} element={<Dialog />}/>
+                                        <Route path={routeUsers()} element={<UsersContainer />}/>
+                                        <Route path={routeMessages()} element={<MessagesContainer /> }/>
+                                        <Route path={routeFriends()} element={<FriendsContainer />}/>
+                                        <Route path={routeMusic()} element={<Music/>}/>
+                                        <Route path={routeShops()} element={<Shops/>}/>
+                                        {/* <Route path={routeShops()} element={withSuspense(Shops)}/> */}
+                                        {/* <Route path={routeVideo()} element={<Video/>}/> */}
+                                        <Route path={routeVideo()} element={
+                                                <Suspense fallback={<div>Loading...</div>}>
+                                                    <Video/>
+                                                </Suspense>
+                                        }/> 
+                                        <Route path={routeHome()} element={<Home/>}/>
+                                        <Route path={routeNews()} element={<News/>}/>
+                                        <Route path={routeContacts()} element={<Contacts/>}/>
+                                        <Route to={{
+                                            path: <Home/>
+                                        }}/>
+                                    </Routes>
+                                </section>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <Footer/>
             </div>
-            <Footer/>
-        </div>
-    );
+        );
 
 }
 export default AppContent;
