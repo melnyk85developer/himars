@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/himars/static/css/main.d793cdac.css",
-    "main.js": "/himars/static/js/main.7f56e4f1.js",
+    "main.css": "/himars/static/css/main.6c2c7a00.css",
+    "main.js": "/himars/static/js/main.427ac893.js",
     "static/media/loader.gif": "/himars/static/media/loader.b2a8fa3d8baba9fc720f.gif",
     "static/media/fon_avatars.png": "/himars/static/media/fon_avatars.76e609f2cfba0175db7b.png",
     "static/media/R_center_Sidebar.png": "/himars/static/media/R_center_Sidebar.0f8d154b371121f422bd.png",
@@ -13,11 +13,11 @@
     "static/media/R_Bottom_Sidebar.png": "/himars/static/media/R_Bottom_Sidebar.be514146e8608d5fa48f.png",
     "static/media/L_Top_Sidebar.png": "/himars/static/media/L_Top_Sidebar.89c5a7400ca35de68434.png",
     "index.html": "/himars/index.html",
-    "main.d793cdac.css.map": "/himars/static/css/main.d793cdac.css.map",
-    "main.7f56e4f1.js.map": "/himars/static/js/main.7f56e4f1.js.map"
+    "main.6c2c7a00.css.map": "/himars/static/css/main.6c2c7a00.css.map",
+    "main.427ac893.js.map": "/himars/static/js/main.427ac893.js.map"
   },
   "entrypoints": [
-    "static/css/main.d793cdac.css",
-    "static/js/main.7f56e4f1.js"
+    "static/css/main.6c2c7a00.css",
+    "static/js/main.427ac893.js"
   ]
 }
