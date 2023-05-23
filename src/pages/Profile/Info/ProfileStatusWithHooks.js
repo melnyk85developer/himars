@@ -4,12 +4,9 @@ import "./styles.scss";
 const ProfileStatusWithHooks = (props) => {
     const [editMode, setEditMode] = useState(false);
     const [status, setStatus] = useState(props.status);
-
     useEffect( () => {
         setStatus(props.status)
     }, [props.status]);
-
-
     const activateEditMode = () => {
         setEditMode(true)
     }
@@ -21,15 +18,15 @@ const ProfileStatusWithHooks = (props) => {
         setStatus(e.currentTarget.value);
     }
     return (
-        <div>
+        <div className="statusBlock">
             { !editMode &&
                 <div>
-                    <span onDoubleClick={activateEditMode}>{props.status || "NO STATUS"}</span>
+                    <h6>Status : </h6><span onDoubleClick={activateEditMode}>{props.status || "NO STATUS"}</span>
                 </div>
             }
             { editMode &&
                 <div>
-                    <input onChange={onStatusChange} autoFocus={true} onBlur={deactivateEditMode} value={status}/>
+                    <h6>Status : </h6><input onChange={onStatusChange} autoFocus={true} onBlur={deactivateEditMode} value={status}/>
                 </div>
             }
         </div>

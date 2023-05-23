@@ -1,8 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { compose } from "redux";
 import { connect } from "react-redux";
 import { useParams } from "react-router-dom";
-import { getProfile, getStatus, updateStatus, savePhoto } from "store/profileReducer";
+import { 
+    getProfile, 
+    getStatus, 
+    updateStatus, 
+    savePhoto,
+    saveProfile } from "store/profileReducer";
 import { withAuthRedirect } from "hoc/withAuthRedirect";
 import Profile from ".";
 import routeMain  from './routes';
@@ -29,7 +34,14 @@ const ProfileContainer = (props) => {
         refreshProfile(userId)
     }, [userId])
     
-    return <Profile isOwner={isOwner === ":id" ? true : false} savePhoto={props.savePhoto}  status={props.status} updateStatus={props.updateStatus} profile={props.profile}/>
+    return <Profile 
+                isOwner={isOwner === ":id" ? true : false} 
+                savePhoto={props.savePhoto}  
+                status={props.status} 
+                updateStatus={props.updateStatus} 
+                profile={props.profile}
+                saveProfile={props.saveProfile}
+            />
 }
 let mapStateToProps = (state) => ({
     profile: state.profilePage.profile,
@@ -39,6 +51,11 @@ let mapStateToProps = (state) => ({
 })
 export {routeMain}
 export default compose(
-    connect(mapStateToProps, {getProfile, getStatus, updateStatus, savePhoto}),
+    connect(mapStateToProps, {
+        getProfile, 
+        getStatus, 
+        updateStatus, 
+        savePhoto,
+        saveProfile}),
     withAuthRedirect
 )(ProfileContainer);

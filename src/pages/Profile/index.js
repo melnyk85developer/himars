@@ -35,7 +35,14 @@ const Profile = (props) => {
                         }
                     />
                     <div className="contentProfiles">
-                        <Info key={props.profile.userId} status={props.status} updateStatus={props.updateStatus} profile={props.profile}/>
+                        <Info   
+                            key={props.profile.userId} 
+                            isOwner={props.isOwner} 
+                            status={props.status} 
+                            updateStatus={props.updateStatus} 
+                            profile={props.profile}
+                            saveProfile={props.saveProfile}
+                        />
                         <MyPostsContainer />
                     </div>
                     <RSidebar 

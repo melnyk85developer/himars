@@ -1,5 +1,6 @@
 import { v1 as uuidv1 } from 'uuid';
 import { profileAPI } from 'services/getUsers';
+import { stopSubmit } from "redux-form";
 import HiMarsMoks from "../fixtures/HiMarsMoks";
 
 const ADD_POST = 'profile/ADD-POST';
@@ -65,7 +66,6 @@ export const getProfile = (userId) => async (dispatch) => {
 export const getStatus = (userId) => async (dispatch) => {
     const response = await profileAPI.getStatus(userId);
     dispatch(setStatus(response.data))
-
 }
 export const updateStatus = (status) => async (dispatch) => {
     const response = await profileAPI.updateStatus(status);
@@ -78,6 +78,16 @@ export const savePhoto = (file) => async (dispatch) => {
     if(response.data.resultCode === 0){
         dispatch(savePhotoSuccess(response.data.data.photos));
     }
-
 }
+export const saveProfile = (profile) => async (dispatch, getState) => {
+    const userId = getState().auth.id
+    const response = await profileAPI.saveProfile(profile);
+    if(response.data.resultCode === 0){
+        dispatch(getProfile(userId));
+    } else {
+        dispatch(stopSubmit("edit-profile", {_error: response.data.messages[0]}));
+        return Promise.reject(response.data.messages[0]);
+    }
+}
+// {"contacts": {"facebook": response.data.messages[0]}
 export default profileReducer;

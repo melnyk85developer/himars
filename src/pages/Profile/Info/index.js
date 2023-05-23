@@ -1,49 +1,64 @@
-import React from "react";
+import React, { useState } from "react";
 import ProfileStatusWithHooks from "./ProfileStatusWithHooks";
+import ProfileDataForm from "./ProfileDataForm";
 import "./styles.scss";
 
 const Info = (props) => {
+    const [editMode, setEditMode] = useState(false);
+
+    const onSubmit = (formData) => {
+        props.saveProfile(formData).then(
+            () => {
+                setEditMode(false);
+            }
+        );
+    }
     return (
         <div className="description">
             <h3>Подробная информация</h3>
-            <div className="name">
-                <h6>Name :</h6>
-                <p>{props.profile.fullName}</p>
-            </div>
-            <div className="aboutMe">
-                <h6>AboutMe :</h6>
-                <p>{props.profile.aboutMe}</p>
-            </div>
-            <div className="contacts">
-                <h6>Contacts :</h6>
-                <p>{props.profile.contacts.facebook}</p>
-                <p>{props.profile.contacts.github}</p>
-                <p>{props.profile.contacts.instagram}</p>
-                <p>{props.profile.contacts.mainLink}</p>
-                <p>{props.profile.contacts.twitter}</p>
-                <p>{props.profile.contacts.vk}</p>
-                <p>{props.profile.contacts.website}</p>
-                <p>{props.profile.contacts.youtube}</p>
-            </div>
-            <div className="lookingForAJob">
-                <h6>Looking For A Job :</h6>
-                <p>{props.profile.lookingForAJob}</p>
-            </div>
-            <div className="lookingForAJobDescription">
-                <h6>Looking For A Job Description :</h6>
-                <p>{props.profile.lookingForAJobDescription}</p>
-            </div>
-
+            { editMode 
+                ? <ProfileDataForm initialValues={props.profile} onSubmit={onSubmit} profile={props.profile}/> 
+                : <ProfileData goToEditMode={()=>{setEditMode(true)}} isOwner={props.isOwner} profile={props.profile}/>}
             <ProfileStatusWithHooks status={props.status} updateStatus={props.updateStatus}/>
-
-            {/* <div className="name"><h6>Name :</h6><p>{props.profile.name}</p></div>
-            <div className="surname"><h6>Surname :</h6><p>{props.profile.surname}</p></div>
-            <div className="age"><h6>Age :</h6><p>{props.profile.age}</p></div>
-            <div className="country"><h6>Country :</h6><p>{props.profile.country}</p></div>
-            <div className="sity"><h6>Sity :</h6><p>{props.profile.sity}</p></div>
-            <div className="familyStatus"><h6>FamilyStatus :</h6><p>{props.profile.familyStatus}</p></div> */}
         </div>
     )
 }
-
+const ProfileData = ({profile, isOwner, goToEditMode}) => {
+    return (
+        <>
+            <div className="name">
+                <h6>Name :</h6>
+                <p>{profile.fullName}</p>
+                { isOwner && <div><button onClick={goToEditMode} >Редактировать профиль</button></div> }
+            </div>
+            <div className="aboutMe">
+                <h6>AboutMe :</h6>
+                <p>{profile.aboutMe}</p>
+            </div>
+            <div className="lookingForAJob">
+                <h6>Looking For A Job :</h6>
+                <p>{profile.lookingForAJob ? "yes" : "От работы кони дохнут"}</p>
+            </div>
+            <div className="lookingForAJobDescription">
+                <h6>My professional skils :</h6>
+                <p>{profile.lookingForAJobDescription}</p>
+            </div>
+            
+            <div className="contacts">
+                <h6>Contacts :</h6>
+                {Object.keys(profile.contacts).map(key => {
+                    return <Contact key={key} contactTitle={key} contactValue={profile.contacts[key]} />
+                })}
+            </div>
+        </>
+    )
+}
+export const Contact = ({contactTitle, contactValue}) => {
+    return (
+        <div>
+            <h6>{contactTitle}:</h6>
+                {contactValue}
+        </div>
+    )
+}
 export default Info;

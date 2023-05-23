@@ -20,7 +20,8 @@
 .contacts h6,
 .lookingForAJob h6,
 .lookingForAJobDescription h6,
-.familyStatus h6 {
+.familyStatus h6,
+.statusBlock h6 {
     margin-right: 15px;
     color: #D55612;
 }
@@ -35,9 +36,16 @@
     margin-bottom: 15px;
     color: #FFAC00;
 }
-// .name {
-
-// }
+.statusBlock h6 {
+    display: inline-block;
+}
+.statusBlock {
+    display: flex;
+    cursor: pointer;
+}
+.name p {
+    margin-right: 20px;
+}
 // .surname {
 
 // }
