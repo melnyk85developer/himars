@@ -11,8 +11,7 @@ import './index.scss';
 const mapStateToProps = (state) => ({
   initialized: state.app.initialized
 })
-
-let AppContainer = compose(
+const AppContainer = compose(
   connect(mapStateToProps, {initializeAppContent}))(AppContent);
 
 const App = () => {
