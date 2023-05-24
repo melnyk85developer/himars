@@ -3,7 +3,8 @@ import { getAuthUserData } from "./authReducer";
 const INITIALIZED_SUCCESS = 'appContent/INITIALIZED_SUCCESS';
 
 let initialState = {
-    initialized: false
+    initialized: false,
+    globalError: null
 }
 const appContentReducer = (state = initialState, action) => {
     switch(action.type){

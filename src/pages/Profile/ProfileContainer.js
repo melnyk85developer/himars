@@ -15,9 +15,8 @@ import routeMain  from './routes';
 const ProfileContainer = (props) => {
     const {id} = useParams();
     let userId = id;
-    let isOwner = userId;
 
-    let refreshProfile = (userId) => {
+    const refreshProfile = (userId) => {
         if(id === ":id"){
             if(!id === ":id"){
                 props.history.push("/authorization")
@@ -35,7 +34,7 @@ const ProfileContainer = (props) => {
     }, [userId])
     
     return <Profile 
-                isOwner={isOwner === ":id" ? true : false} 
+                isOwner={userId === ":id" ? true : false} 
                 savePhoto={props.savePhoto}  
                 status={props.status} 
                 updateStatus={props.updateStatus} 

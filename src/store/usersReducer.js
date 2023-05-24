@@ -1,4 +1,4 @@
-import { usersAPI } from "services/getUsers";
+import { usersAPI } from "services/api";
 import { updateObjectInArray } from "utils/objectHelpers";
 
 const FOLLOW = 'users/FOLLOW';

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import cn from "classnames";
 
 const Paginator = ({totalItemsCount, pageSize, currentPage, onPageChanged, users, portionSize = 10}) => {
     let pagesCount = Math.ceil(totalItemsCount / pageSize);
@@ -9,10 +10,10 @@ const Paginator = ({totalItemsCount, pageSize, currentPage, onPageChanged, users
         pages.push(i);
     }
     
-    let portionCount = Math.ceil(pagesCount / portionSize);
-    let [portionNumber, setPortionNumber] = useState(1);
-    let leftPortionPageNumber = (portionNumber - 1) * portionSize + 1;
-    let rightPortionPageNumber = portionNumber * portionSize;
+    const portionCount = Math.ceil(pagesCount / portionSize);
+    const [portionNumber, setPortionNumber] = useState(1);
+    const leftPortionPageNumber = (portionNumber - 1) * portionSize + 1;
+    const rightPortionPageNumber = portionNumber * portionSize;
 
     return (
         <div>

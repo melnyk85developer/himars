@@ -1,5 +1,5 @@
 import React, { Suspense, useEffect } from 'react';
-import { Routes, Route} from 'react-router-dom';
+import { Routes, Route, Navigate} from 'react-router-dom';
 // import { withSuspense } from '../../hoc/withSuspense';
 import Authorization, { routeMain as routeAuthorization } from 'pages/Authorization/authorization';
 import ProfileContainer, { routeMain as routeProfile }  from '../../pages/Profile/ProfileContainer';
@@ -22,14 +22,10 @@ import './styles.scss';
 const Video = React.lazy(() => import('../../pages/Video'))
 
 const AppContent = (props) => {
-
+    
     useEffect(() => {
         props.initializeAppContent()
     }, [])
-
-    // componentDidMount(){
-    //     this.props.initializeAppContent()
-    // }
 
         if(!props.initialized){
             return <Preloader />
@@ -63,9 +59,9 @@ const AppContent = (props) => {
                                         <Route path={routeHome()} element={<Home/>}/>
                                         <Route path={routeNews()} element={<News/>}/>
                                         <Route path={routeContacts()} element={<Contacts/>}/>
-                                        <Route to={{
-                                            path: <Home/>
-                                        }}/>
+                                        <Route path="*" element={<Navigate to={routeProfile()} />} />
+                                        
+                                        {/* <Route to={{path: <Home/>}}/> */}
                                     </Routes>
                                 </section>
                             </div>
