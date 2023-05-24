@@ -8,7 +8,7 @@ import { follow,
             unfollow, 
             setCurrentPage, 
             toggleFollowingProgress,
-            requestUsers } from "store/usersReducer.js";
+            requestUsers } from "store/usersReducer.ts";
 import {getUsers,
         getPageSize, 
         getTotalUsersCount,
