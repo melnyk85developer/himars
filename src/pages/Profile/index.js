@@ -1,5 +1,5 @@
 import React from "react";
-import store from "store/reduxStore.js";
+import store from "store/reduxStore.ts";
 import routeMain from "./routes.js";
 import LSidebar from "../../components/LSidebar";
 import Avatar from "./Avatar/index.js";

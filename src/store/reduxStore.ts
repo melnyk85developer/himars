@@ -9,7 +9,7 @@ import authReducer from "./authReducer";
 import appContentReducer from "./appContentReducer";
 // import sidebarReducer from "./sidebarReducer";
 
-let reducers = combineReducers({
+let rootReducer = combineReducers({
     // sidebar: sidebarReducer,
     profilePage: profileReducer,
     messagesPage: messagesReducer,
@@ -18,10 +18,15 @@ let reducers = combineReducers({
     auth: authReducer,
     form: formReducer,
     app: appContentReducer
-});
+})
 
+type RootReducerType = typeof rootReducer;
+export type AppStateType = ReturnType<RootReducerType>
+
+// @ts-ignore
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
-const store = createStore(reducers, composeEnhancers(applyMiddleware(thunkMiddleware)))
+const store = createStore(rootReducer, composeEnhancers(applyMiddleware(thunkMiddleware)))
+// @ts-ignore
 window.__store__ = store;
 
 // let store = createStore(reducers, applyMiddleware(thunkMiddleware));

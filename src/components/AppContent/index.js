@@ -44,7 +44,7 @@ const AppContent = (props) => {
                                         <Route path={routeAuthorization()} element={<Authorization />}/>
                                         <Route path={routeProfile()} element={<ProfileContainer />}/>
                                         <Route path={routeDialog()} element={<Dialog />}/>
-                                        <Route path={routeUsers()} element={<UsersContainer />}/>
+                                        <Route path={routeUsers()} element={<UsersContainer/>}/>
                                         <Route path={routeMessages()} element={<MessagesContainer /> }/>
                                         <Route path={routeFriends()} element={<FriendsContainer />}/>
                                         <Route path={routeMusic()} element={<Music/>}/>

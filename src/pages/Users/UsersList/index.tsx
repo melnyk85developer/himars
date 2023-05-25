@@ -1,8 +1,20 @@
 import React from "react";
 import UsersItem from "../UsersItem";
 import Paginator from "components/Paginator/Paginator";
+import { UserType } from "types/types";
 
-const UsersList = (props) => {
+type PropsType = {
+    totalItemsCount: number 
+    pageSize: number
+    currentPage: number
+    onPageChanged: (pageNumber: number) => void
+    users: Array<UserType>
+    followingInProgress: Array<number>
+    unfollow: (userId: number)=> void
+    follow: (userId: number)=> void
+}
+
+const UsersList: React.FC<PropsType> = (props) => {
     return (
         <div className="wrapFriendsList">
             <div className="wrapperUsersPagination">
@@ -19,12 +31,10 @@ const UsersList = (props) => {
                     user={user}
                     follow={props.follow}
                     unfollow={props.unfollow}
-                    toggleFollowingProgress={props.toggleFollowingProgress}
                     followingInProgress={props.followingInProgress}
                 />
             ))}
         </div> 
     )
 }
-
 export default UsersList;
