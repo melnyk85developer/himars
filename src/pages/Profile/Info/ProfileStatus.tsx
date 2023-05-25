@@ -9,7 +9,6 @@ type StateType = {
     editMode: boolean
     status: string
 }
-
 class ProfileStatus extends React.Component<PropsType, StateType> {
     state = {
         editMode: false,
@@ -56,5 +55,4 @@ class ProfileStatus extends React.Component<PropsType, StateType> {
         )
     }
 }
-
 export default ProfileStatus;
