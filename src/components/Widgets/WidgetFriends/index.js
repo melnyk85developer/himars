@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import getFriends from "services/getFriends";
+import { friendsAPI } from "services/friendsApi";
 import WidgetFriendsList from "./WidgetFriendsList"
 import "./styles.scss";
 
@@ -7,7 +7,7 @@ const WidgetFriends = () => {
     const [friendsList, setFriendsList] = useState([]);
 
     useEffect(() => {
-        getFriends().then(response => {
+        friendsAPI.getFriends().then(response => {
             setFriendsList(response.data.filter( item => item.followed === true));
         }) 
     }, []);

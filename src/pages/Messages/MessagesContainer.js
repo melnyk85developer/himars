@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { compose } from "redux";
 import { withAuthRedirect } from "hoc/withAuthRedirect.js";
-import getFriends from "services/getFriends.js";
+import { friendsAPI } from "services/friendsApi";
 import { connect } from "react-redux";
 import { sendMessageCreator } from "store/messagesReducer";
 import Messages from "./index.js";
@@ -12,7 +12,7 @@ const MessagesContainer = (props) => {
     const [usersList, setUsersList] = useState([]);
 
     useEffect(() => {
-        getFriends().then(response => {
+        friendsAPI.getFriends().then(response => {
             setUsersList(response.data)
         }) 
     }, [])

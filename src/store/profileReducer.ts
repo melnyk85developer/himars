@@ -1,5 +1,5 @@
 import { v1 as uuidv1 } from 'uuid';
-import { profileAPI } from 'services/api';
+import { profileAPI } from 'services/profileApi';
 import { stopSubmit } from "redux-form";
 import { ProfileType, PostType, PhotosType } from 'types/types';
 import HiMarsMoks from "../fixtures/HiMarsMoks";

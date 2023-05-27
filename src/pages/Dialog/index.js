@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import getFriends from "services/getFriends";
+import { friendsAPI } from "services/friendsApi";
 // import { useParams } from "react-router-dom";
 import CompanionItem from "pages/Messages/CompanionItem/index.js";
 import routeMain from "./routes.js";
@@ -13,7 +13,7 @@ const Dialog = (props) => {
     const [usersList, setUsersList] = useState([]);
 
     useEffect(() => {
-        getFriends().then(response => {
+        friendsAPI.getFriends().then(response => {
             setUsersList(response.data)
         }) 
     }, [])

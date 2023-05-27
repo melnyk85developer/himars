@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import getFriends from "services/getFriends";
+import { friendsAPI } from "services/friendsApi";
 import PeopleItem from "./WidgetPeopleItem";
 import "./styles.scss";
 
@@ -7,7 +7,7 @@ const WidgetPeople = () => {
     const [usersList, setUsersList] = useState([]);
 
     useEffect(() => {
-        getFriends().then(response => {
+        friendsAPI.getFriends().then(response => {
             setUsersList(response.data)
         }) 
     }, []);

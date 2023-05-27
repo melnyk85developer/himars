@@ -7,12 +7,13 @@ import { compose } from "redux";
 import { follow, 
             unfollow, 
             requestUsers } from "store/usersReducer";
-import {getUsers,
+import { 
+        getUsers,
         getPageSize, 
         getTotalUsersCount,
         getCurrentPage,
         getIsFetching,
-        getFollowingInProgress} from "store/usersSelectors";
+        getFollowingInProgress } from "store/usersSelectors";
 import { UserType } from "types/types.js";
 import { AppStateType } from "store/reduxStore";
 
