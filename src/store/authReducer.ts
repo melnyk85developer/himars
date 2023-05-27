@@ -1,4 +1,4 @@
-import { authAPI, securityAPI } from "services/api";
+import { ResultCodeForCaptcha, ResultCodesEnum, authAPI, securityAPI } from "services/api";
 import { stopSubmit } from "redux-form";
 
 const SET_USER_DATA = 'auth/SET_USER_DATA';
@@ -39,6 +39,7 @@ type SetAuthUserDataActionType = {
 export const setAuthUserData = (id: number | null, login: string | null, email: string | null, isAuth: boolean):SetAuthUserDataActionType => ({
     type: SET_USER_DATA,
     payload: {id, login, email, isAuth} });
+
 type GetCaptchaUrlSuccessType = {
     type: typeof GET_CAPTCHA_URL_SUCCESS
     payload: { captchaUrl: string }
@@ -47,23 +48,29 @@ export const getCaptchaUrlSuccess = (captchaUrl: string): GetCaptchaUrlSuccessTy
     type: GET_CAPTCHA_URL_SUCCESS, payload: {captchaUrl} });
 
 export const getAuthUserData = () => async (dispatch: any) => {
-    const response = await authAPI.me();
-    if (response.data.resultCode === 0) {
-        const { id, login, email } = response.data.data;
+
+    const meData = await authAPI.me();
+
+    if (meData.resultCode === ResultCodesEnum.Success) {
+        const { id, login, email } = meData.data;
         dispatch(setAuthUserData(id, login, email, true));
     }
 }
-
-
 export const login = (email: string, password: string, rememberMe: boolean, captcha: string | any) => async (dispatch: any) => {
-    const response = await authAPI.login(email, password, rememberMe, captcha);
-    if(response.data.resultCode === 0){
-        dispatch(getAuthUserData())
+
+    const loginData = await authAPI.login(email, password, rememberMe, captcha);
+
+    if(loginData.resultCode === ResultCodesEnum.Success){
+
+        dispatch(getAuthUserData());
+
     } else {
-        if(response.data.resultCode === 10){
+        if(loginData.resultCode === ResultCodeForCaptcha.CaptchaIsRequired){
+
             dispatch(getCaptchaUrl());
         }
-        const messageError = response.data.messages.length > 0 ? response.data.messages[0] : "Some error";
+        const messageError = loginData.massages.length > 0 ? loginData.massages[0] : "Some error";
+
         dispatch(stopSubmit("login", {_error: messageError}));
     }
 }

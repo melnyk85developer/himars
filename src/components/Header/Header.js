@@ -1,7 +1,7 @@
 import React from 'react';
 import "./styles.scss"
 import { NavLink } from 'react-router-dom';
-import { routeMain as routeAuthorization } from 'pages/Authorization/authorization';
+import { routeMain as routeAuthorization } from 'pages/Login/Login';
 
 const Header = (props) => {
     return (

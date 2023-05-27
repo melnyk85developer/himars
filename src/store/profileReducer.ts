@@ -12,7 +12,7 @@ const SAVE_PHOTO_SUCCESS = 'profile/SAVE_PHOTO_SUCCESS'
 
 const posts = HiMarsMoks.posts;
 
-
+console.log(posts)
 
 let initialState = {
     profile: null as ProfileType | null,
@@ -20,6 +20,7 @@ let initialState = {
     status: '',
     newPostText: ''
 }
+console.log(initialState.posts)
 
 export type InitialStateType = typeof initialState;
 
@@ -108,7 +109,7 @@ export const savePhoto = (file: any) => async (dispatch: any) => {
         dispatch(savePhotoSuccess(response.data.data.photos));
     }
 }
-export const saveProfile = (profile: PhotosType) => async (dispatch: any, getState: any) => {
+export const saveProfile = (profile:  ProfileType) => async (dispatch: any, getState: any) => {
     const userId = getState().auth.id
     const response = await profileAPI.saveProfile(profile);
     if(response.data.resultCode === 0){
