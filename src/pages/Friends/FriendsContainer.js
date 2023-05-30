@@ -5,8 +5,10 @@ import { withAuthRedirect } from "hoc/withAuthRedirect";
 import Friends from ".";
 import { routeMain } from "pages/Friends";
 
+import hiMarsApi from '../../fixtures/HiMarsMoks';
+
 const FriendsContainer = (props) => {
-    const [friendsList, setFriendsList] = useState([]);
+    const [friendsList, setFriendsList] = useState(hiMarsApi.users);
 
     useEffect(() => {
         friendsAPI.getFriends().then(response => {

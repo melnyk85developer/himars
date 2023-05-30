@@ -3,17 +3,20 @@ import { compose } from "redux";
 import { withAuthRedirect } from "hoc/withAuthRedirect.js";
 import { friendsAPI } from "services/friendsApi";
 import { connect } from "react-redux";
-import { sendMessageCreator } from "store/messagesReducer";
+import { actions } from "store/messagesReducer";
 import Messages from "./index.js";
 import routeMain from "./routes.js";
 import "./styles.scss";
 
+import hiMarsApi from '../../fixtures/HiMarsMoks';
+
 const MessagesContainer = (props) => {
-    const [usersList, setUsersList] = useState([]);
+    const [usersList, setUsersList] = useState(hiMarsApi.users);
 
     useEffect(() => {
         friendsAPI.getFriends().then(response => {
-            setUsersList(response.data)
+            // setUsersList(response.data)
+            setUsersList(hiMarsApi.users)
         }) 
     }, [])
     
@@ -28,7 +31,7 @@ let mapStateToProps = (state) => {
 let mapDispatchToProps = (dispatch) => {
     return {
         sendMessage: (newMessageBody) => {
-            dispatch(sendMessageCreator(newMessageBody));
+            dispatch(actions.sendMessageCreator(newMessageBody));
         },
 
     }

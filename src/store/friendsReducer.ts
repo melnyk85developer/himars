@@ -1,15 +1,14 @@
 import HiMarsMoks from "../fixtures/HiMarsMoks";
 
-// const friends = HiMarsMoks.friends;
 const users = HiMarsMoks.users;
 
 let initialState = {
     friends: [] as Array<string>,
-    users
+    users: users
 }
 type InitialStateType = typeof initialState;
 
-const friendsReducer = (state = initialState, action: any) => {
+const friendsReducer = (state = initialState, action: InitialStateType) => {
     return state;
 }
 

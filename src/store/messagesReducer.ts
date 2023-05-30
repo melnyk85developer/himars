@@ -1,9 +1,7 @@
 import { v1 as uuidv1 } from 'uuid';
 import HiMarsMoks from "../fixtures/HiMarsMoks";
+import { InferActionsTypes } from './reduxStore';
 
-const SEND_MESSAGE = 'messages/SEND-MESSAGE';
-
-const companions = HiMarsMoks.companions;
 const messages = HiMarsMoks.messages;
 
 type CompanionsType = {
@@ -17,14 +15,12 @@ type MessagesType = {
 
 let initialState = {
     companions: [] as Array<CompanionsType>,
-    messages: [] as Array<MessagesType | any>
+    messages: messages as Array<MessagesType | any>
 }
 
-export type InitialStateType = typeof initialState;
-
-const messagesReducer = (state = initialState, action: any): InitialStateType => {
+const messagesReducer = (state = initialState, action: ActionsType): InitialStateType => {
     switch(action.type){
-        case SEND_MESSAGE:
+        case 'MESSAGES/SEND-MESSAGE':
             let body = action.newMessageBody;
             return { 
                 ...state, 
@@ -34,11 +30,9 @@ const messagesReducer = (state = initialState, action: any): InitialStateType =>
             return state;
     }
 }
-
-type SendMessageCreatorType = {
-    type: typeof SEND_MESSAGE
-    newMessageBody: string
+export const actions = {
+    sendMessageCreator: (newMessageBody: string) => ({type: 'MESSAGES/SEND-MESSAGE', newMessageBody} as const)
 }
-
-export const sendMessageCreator = (newMessageBody: string): SendMessageCreatorType => ({type: SEND_MESSAGE, newMessageBody})
+export type InitialStateType = typeof initialState;
+type ActionsType = InferActionsTypes<typeof actions>
 export default messagesReducer;

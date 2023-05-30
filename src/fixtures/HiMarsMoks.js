@@ -645,80 +645,80 @@ const hiMarsApi = {
     companions: [
 
     ],
-    messages: [
-        {
-            "id": "1",
-            "avatar": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQ4CcxFbbX-LR32Iz4MwIpvkuEGcEDh-u5RRq7fpPqG2p4Ri-7",
-            "message": "Почитать подробнее об этом атрибуте можно здесь. Сегодня хочу поделиться техникой, как вы можете менять цвет текста, который создается с помощью этого атрибута.",
-            "im": true
-        },
-        {   
-            "id": "2",   
-            "avatar": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQ4CcxFbbX-LR32Iz4MwIpvkuEGcEDh-u5RRq7fpPqG2p4Ri-7",
-            "message": "2Lorem Ipt to make a onronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-            "im": false
-        },    
-        {
-            "id": "3",
-            "avatar": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQ4CcxFbbX-LR32Iz4MwIpvkuEGcEDh-u5RRq7fpPqG2p4Ri-7",
-            "message": "Lorem Ipsnceake a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-            "im": true
-        },
-        {
-            "id": "4",
-            "avatar": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQ4CcxFbbX-LR32Iz4MwIpvkuEGcEDh-u5RRq7fpPqG2p4Ri-7",
-            "message": "Lorem Ipsum is simply dummy text of the prinlectronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-            "im": true
-        },
-        {   
-            "id": "5",   
-            "avatar": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQ4CcxFbbX-LR32Iz4MwIpvkuEGcEDh-u5RRq7fpPqG2p4Ri-7",
-            "message": "Lorem Ipt to make a onronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-            "im": false
-        },    
-        {
-            "id": "6",
-            "avatar": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQ4CcxFbbX-LR32Iz4MwIpvkuEGcEDh-u5RRq7fpPqG2p4Ri-7",
-            "message": "Lorem Ipsnceake a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-            "im": true
-        },
-        {
-            "id": "7",
-            "avatar": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQ4CcxFbbX-LR32Iz4MwIpvkuEGcEDh-u5RRq7fpPqG2p4Ri-7",
-            "message": "Почитать подробнее об этом атрибуте можно здесь. Сегодня хочу поделиться техникой, как вы можете менять цвет текста, который создается с помощью этого атрибута.",
-            "im": true
-        },
-        {   
-            "id": "8",   
-            "avatar": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQ4CcxFbbX-LR32Iz4MwIpvkuEGcEDh-u5RRq7fpPqG2p4Ri-7",
-            "message": "Lorem Ipt to make a onronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-            "im": false
-        },    
-        {
-            "id": "9",
-            "avatar": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQ4CcxFbbX-LR32Iz4MwIpvkuEGcEDh-u5RRq7fpPqG2p4Ri-7",
-            "message": "Lorem Ipsnceake a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-            "im": true
-        },
-        {
-            "id": "10",
-            "avatar": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQ4CcxFbbX-LR32Iz4MwIpvkuEGcEDh-u5RRq7fpPqG2p4Ri-7",
-            "message": "Lorem Ipsum is simply dummy text of the prinlectronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-            "im": true
-        },
-        {   
-            "id": "11",   
-            "avatar": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQ4CcxFbbX-LR32Iz4MwIpvkuEGcEDh-u5RRq7fpPqG2p4Ri-7",
-            "message": "Lorem Ipt to make a onronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-            "im": false
-        },    
-        {
-            "id": "12",
-            "avatar": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQ4CcxFbbX-LR32Iz4MwIpvkuEGcEDh-u5RRq7fpPqG2p4Ri-7",
-            "message": "Lorem Ipsnceake a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-            "im": true
-        }
-    ],
+    // messages: [
+    //     {
+    //         "id": "1",
+    //         "avatar": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQ4CcxFbbX-LR32Iz4MwIpvkuEGcEDh-u5RRq7fpPqG2p4Ri-7",
+    //         "message": "Почитать подробнее об этом атрибуте можно здесь. Сегодня хочу поделиться техникой, как вы можете менять цвет текста, который создается с помощью этого атрибута.",
+    //         "im": true
+    //     },
+    //     {   
+    //         "id": "2",   
+    //         "avatar": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQ4CcxFbbX-LR32Iz4MwIpvkuEGcEDh-u5RRq7fpPqG2p4Ri-7",
+    //         "message": "2Lorem Ipt to make a onronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    //         "im": false
+    //     },    
+    //     {
+    //         "id": "3",
+    //         "avatar": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQ4CcxFbbX-LR32Iz4MwIpvkuEGcEDh-u5RRq7fpPqG2p4Ri-7",
+    //         "message": "Lorem Ipsnceake a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    //         "im": true
+    //     },
+    //     {
+    //         "id": "4",
+    //         "avatar": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQ4CcxFbbX-LR32Iz4MwIpvkuEGcEDh-u5RRq7fpPqG2p4Ri-7",
+    //         "message": "Lorem Ipsum is simply dummy text of the prinlectronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    //         "im": true
+    //     },
+    //     {   
+    //         "id": "5",   
+    //         "avatar": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQ4CcxFbbX-LR32Iz4MwIpvkuEGcEDh-u5RRq7fpPqG2p4Ri-7",
+    //         "message": "Lorem Ipt to make a onronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    //         "im": false
+    //     },    
+    //     {
+    //         "id": "6",
+    //         "avatar": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQ4CcxFbbX-LR32Iz4MwIpvkuEGcEDh-u5RRq7fpPqG2p4Ri-7",
+    //         "message": "Lorem Ipsnceake a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    //         "im": true
+    //     },
+    //     {
+    //         "id": "7",
+    //         "avatar": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQ4CcxFbbX-LR32Iz4MwIpvkuEGcEDh-u5RRq7fpPqG2p4Ri-7",
+    //         "message": "Почитать подробнее об этом атрибуте можно здесь. Сегодня хочу поделиться техникой, как вы можете менять цвет текста, который создается с помощью этого атрибута.",
+    //         "im": true
+    //     },
+    //     {   
+    //         "id": "8",   
+    //         "avatar": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQ4CcxFbbX-LR32Iz4MwIpvkuEGcEDh-u5RRq7fpPqG2p4Ri-7",
+    //         "message": "Lorem Ipt to make a onronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    //         "im": false
+    //     },    
+    //     {
+    //         "id": "9",
+    //         "avatar": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQ4CcxFbbX-LR32Iz4MwIpvkuEGcEDh-u5RRq7fpPqG2p4Ri-7",
+    //         "message": "Lorem Ipsnceake a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    //         "im": true
+    //     },
+    //     {
+    //         "id": "10",
+    //         "avatar": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQ4CcxFbbX-LR32Iz4MwIpvkuEGcEDh-u5RRq7fpPqG2p4Ri-7",
+    //         "message": "Lorem Ipsum is simply dummy text of the prinlectronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    //         "im": true
+    //     },
+    //     {   
+    //         "id": "11",   
+    //         "avatar": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQ4CcxFbbX-LR32Iz4MwIpvkuEGcEDh-u5RRq7fpPqG2p4Ri-7",
+    //         "message": "Lorem Ipt to make a onronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    //         "im": false
+    //     },    
+    //     {
+    //         "id": "12",
+    //         "avatar": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQ4CcxFbbX-LR32Iz4MwIpvkuEGcEDh-u5RRq7fpPqG2p4Ri-7",
+    //         "message": "Lorem Ipsnceake a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    //         "im": true
+    //     }
+    // ],
     // posts: [
     //     {
     //         id: 1,
@@ -757,7 +757,80 @@ const hiMarsApi = {
     //         dislike: 30,
     //     }
     // ],
-
+    messages: [
+        {
+            id: 1,
+            avatar: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQ4CcxFbbX-LR32Iz4MwIpvkuEGcEDh-u5RRq7fpPqG2p4Ri-7",
+            message: "Почитать подробнее об этом атрибуте можно здесь. Сегодня хочу поделиться техникой, как вы можете менять цвет текста, который создается с помощью этого атрибута.",
+            im: true
+        },
+        {   
+            id: 2,   
+            avatar: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQ4CcxFbbX-LR32Iz4MwIpvkuEGcEDh-u5RRq7fpPqG2p4Ri-7",
+            message: "2Lorem Ipt to make a onronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            im: false
+        },    
+        {
+            id: 3,
+            avatar: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQ4CcxFbbX-LR32Iz4MwIpvkuEGcEDh-u5RRq7fpPqG2p4Ri-7",
+            message: "Lorem Ipsnceake a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            im: true
+        },
+        {
+            id: 4,
+            avatar: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQ4CcxFbbX-LR32Iz4MwIpvkuEGcEDh-u5RRq7fpPqG2p4Ri-7",
+            message: "Lorem Ipsum is simply dummy text of the prinlectronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            xm: true
+        },
+        {   
+            id: 5,   
+            avatar: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQ4CcxFbbX-LR32Iz4MwIpvkuEGcEDh-u5RRq7fpPqG2p4Ri-7",
+            message: "Lorem Ipt to make a onronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            im: false
+        },    
+        {
+            id: 6,
+            avatar: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQ4CcxFbbX-LR32Iz4MwIpvkuEGcEDh-u5RRq7fpPqG2p4Ri-7",
+            message: "Lorem Ipsnceake a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            im: true
+        },
+        {
+            id: 7,
+            avatar: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQ4CcxFbbX-LR32Iz4MwIpvkuEGcEDh-u5RRq7fpPqG2p4Ri-7",
+            message: "Почитать подробнее об этом атрибуте можно здесь. Сегодня хочу поделиться техникой, как вы можете менять цвет текста, который создается с помощью этого атрибута.",
+            im: true
+        },
+        {   
+            id: 8,   
+            avatar: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQ4CcxFbbX-LR32Iz4MwIpvkuEGcEDh-u5RRq7fpPqG2p4Ri-7",
+            message: "Lorem Ipt to make a onronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            im: false
+        },    
+        {
+            id: 9,
+            avatar: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQ4CcxFbbX-LR32Iz4MwIpvkuEGcEDh-u5RRq7fpPqG2p4Ri-7",
+            message: "Lorem Ipsnceake a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            im: true
+        },
+        {
+            id: 10,
+            avatar: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQ4CcxFbbX-LR32Iz4MwIpvkuEGcEDh-u5RRq7fpPqG2p4Ri-7",
+            message: "Lorem Ipsum is simply dummy text of the prinlectronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            im: true
+        },
+        {   
+            id: 11,   
+            avatar: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQ4CcxFbbX-LR32Iz4MwIpvkuEGcEDh-u5RRq7fpPqG2p4Ri-7",
+            message: "Lorem Ipt to make a onronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            im: false
+        },    
+        {
+            id: 12,
+            avatar: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQ4CcxFbbX-LR32Iz4MwIpvkuEGcEDh-u5RRq7fpPqG2p4Ri-7",
+            message: "Lorem Ipsnceake a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            im: true
+        }
+    ],
     posts: [
         {
             "id": "1",
