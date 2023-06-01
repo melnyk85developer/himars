@@ -1,17 +1,19 @@
 import React from "react";
 import routeMain from "./routes.js";
-import LSidebar from "../../components/LSidebar";
-import RSidebar from "../../components/RSidebar";
-import MessageItem from "./MessageItem";
+import LSidebar from "../../components/LSidebar/index.js";
+import RSidebar from "../../components/RSidebar/index.js";
+import MessageItem from "./MessageItem/index.js";
 import CompanionItem from "./CompanionItem/index.js";
-import MessageList from "./MessageList";
+import MessageList from "./MessageList/index.js";
 import AddMessageForm from "./AddMessageForm/AddMessageForm.js";
-import WidgetFriends from "../../components/Widgets/WidgetFriends";
-import WidgetPeople from "../../components/Widgets/WidgetsPeople";
-import WidgetYofamiliar from "../../components/Widgets/WidgetYofamiliar";
+import WidgetFriends from "../../components/Widgets/WidgetFriends/index.js";
+import WidgetPeople from "../../components/Widgets/WidgetsPeople/index.js";
+import WidgetYofamiliar from "../../components/Widgets/WidgetYofamiliar/index.js";
 import "./styles.scss";
 
-const Messages = (props) => {
+type OwnPropsType = {}
+
+const Messages: React.FC<OwnPropsType> = (props) => {
     
     console.log("Hello message")
 

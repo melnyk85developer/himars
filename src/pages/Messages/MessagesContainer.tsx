@@ -7,10 +7,10 @@ import { actions } from "store/messagesReducer";
 import Messages from "./index.js";
 import routeMain from "./routes.js";
 import "./styles.scss";
+import hiMarsApi from '../../fixtures/HiMarsMoks.js';
+import { AppStateType } from "store/reduxStore.js";
 
-import hiMarsApi from '../../fixtures/HiMarsMoks';
-
-const MessagesContainer = (props) => {
+const MessagesContainer = (props: any) => {
     const [usersList, setUsersList] = useState(hiMarsApi.users);
 
     useEffect(() => {
@@ -23,22 +23,14 @@ const MessagesContainer = (props) => {
     return <Messages sendMessage={props.sendMessage} usersList={usersList} messagesPage={props.messagesPage}/>
 }
 
-let mapStateToProps = (state) => {
+let mapStateToProps = (state: AppStateType) => {
     return {
         messagesPage: state.messagesPage,
-    }
-}
-let mapDispatchToProps = (dispatch) => {
-    return {
-        sendMessage: (newMessageBody) => {
-            dispatch(actions.sendMessageCreator(newMessageBody));
-        },
-
     }
 }
 
 export {routeMain};
 export default compose(
-    connect(mapStateToProps, mapDispatchToProps),
+    connect(mapStateToProps, {...actions}),
     withAuthRedirect
 )(MessagesContainer);
