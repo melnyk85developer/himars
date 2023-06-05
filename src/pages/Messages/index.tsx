@@ -1,5 +1,5 @@
 import React from "react";
-import routeMain from "./routes.js";
+import routeMain from "./routes";
 import LSidebar from "../../components/LSidebar/index.js";
 import RSidebar from "../../components/RSidebar/index.js";
 import MessageItem from "./MessageItem/index.js";
@@ -14,8 +14,6 @@ import "./styles.scss";
 type OwnPropsType = {}
 
 const Messages: React.FC<OwnPropsType> = (props) => {
-    
-    console.log("Hello message")
 
     let companion = props.usersList
         .map( companion => <CompanionItem
