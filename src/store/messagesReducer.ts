@@ -3,12 +3,21 @@ import HiMarsMoks from "../fixtures/HiMarsMoks";
 import { InferActionsTypes } from './reduxStore';
 
 const messages = HiMarsMoks.messages;
-const companions = HiMarsMoks.companions;
+const companions = HiMarsMoks.users;
 
 type CompanionsType = {
-    id: number
-    name: string
+    id: string
     avatar: string
+    name: string
+    surname: string
+    age: string
+    status: string
+    familyStatus: string
+    location: {
+        country: string
+        city: string
+    }
+    followed: boolean
 }
 type MessagesType = {
     id: string

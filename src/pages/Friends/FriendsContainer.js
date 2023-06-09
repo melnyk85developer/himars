@@ -11,9 +11,10 @@ const FriendsContainer = (props) => {
     const [friendsList, setFriendsList] = useState(hiMarsApi.users);
 
     useEffect(() => {
-        friendsAPI.getFriends().then(response => {
-            setFriendsList(response.data.filter( item => item.followed === true));
-        }) 
+        setFriendsList(hiMarsApi.users)
+        // friendsAPI.getFriends().then(response => {
+        //     setFriendsList(response.data.filter( item => item.followed === true));
+        // }) 
     }, [])
 
     return <Friends friendsList={friendsList}/>

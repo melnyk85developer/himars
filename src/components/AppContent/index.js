@@ -60,8 +60,6 @@ const AppContent = (props) => {
                                         <Route path={routeNews()} element={<News/>}/>
                                         <Route path={routeContacts()} element={<Contacts/>}/>
                                         <Route path="*" element={<Navigate to={routeProfile()} />} />
-                                        
-                                        {/* <Route to={{path: <Home/>}}/> */}
                                     </Routes>
                                 </section>
                             </div>

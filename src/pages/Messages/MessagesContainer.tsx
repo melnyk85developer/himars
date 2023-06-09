@@ -8,7 +8,6 @@ import { AppStateType } from "store/reduxStore";
 import Messages from "./index";
 import routeMain from "./routes";
 import "./styles.scss";
-import hiMarsApi from '../../fixtures/HiMarsMoks.js';
 
 type PropsType = {
     messagesPage: InitialStateType
@@ -17,16 +16,17 @@ type PropsType = {
 }
 
 const MessagesContainer: React.FC<PropsType> = (props) => {
-    const [usersList, setUsersList] = useState(props.companions);
+    const [usersList, setUsersList] = useState(props.messagesPage.companions);
 
     useEffect(() => {
-        friendsAPI.getFriends().then(response => {
-            // setUsersList(response.data)
-            setUsersList(usersList)
-        }) 
+        setUsersList(usersList)
+        // friendsAPI.getFriends().then(response => {
+        //     // setUsersList(response.data)
+        //     setUsersList(usersList)
+        // }) 
     }, [])
     
-    return <Messages 
+    return  <Messages 
                 sendMessage={props.sendMessage} 
                 messagesPage={props.messagesPage}
                 companions={props.companions}
