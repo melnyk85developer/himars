@@ -5,27 +5,36 @@ import RSidebar from "../../components/RSidebar/index.js";
 import MessageItem from "./MessageItem/index.js";
 import CompanionItem from "./CompanionItem/index.js";
 import MessageList from "./MessageList/index.js";
-import AddMessageForm from "./AddMessageForm/AddMessageForm.js";
+import AddMessageForm from "./AddMessageForm/AddMessageForm";
+import { InitialStateType } from "store/messagesReducer";
 import WidgetFriends from "../../components/Widgets/WidgetFriends/index.js";
 import WidgetPeople from "../../components/Widgets/WidgetsPeople/index.js";
 import WidgetYofamiliar from "../../components/Widgets/WidgetYofamiliar/index.js";
 import "./styles.scss";
 
-type OwnPropsType = {}
+type PropsType = {
+    messagesPage: InitialStateType
+    companions: InitialStateType
+    sendMessage: (massageText: string) => void
+}
+export type NewMessageFormValuesType = {
+    newMessageBody: string
+}
+type LoginFormValuesTypeKeys = Extract<keyof NewMessageFormValuesType, string>
 
-const Messages: React.FC<OwnPropsType> = (props) => {
+const Messages: React.FC<PropsType> = (props) => {
 
-    let companion = props.usersList
-        .map( companion => <CompanionItem
+    const companion = props.messagesPage.companions
+        .map( (companion) => <CompanionItem
             key={companion.id} 
             id={companion.id}
             avatar={companion.avatar}
             name={companion.name}
-            surname={companion.surname}
+            // surname={companion.surname}
 
         />)
 
-    let messages = props.messagesPage.messages
+    const messages = props.messagesPage.messages
         .map(message => <MessageItem
             key={message.id}
             id={message.id}
@@ -34,7 +43,7 @@ const Messages: React.FC<OwnPropsType> = (props) => {
             im={message.im}
         />)
 
-    let addNewMessage = (values) => {
+    const addNewMessage = (values: NewMessageFormValuesType) => {
         props.sendMessage(values.newMessageBody);
     }
     return (
@@ -55,9 +64,9 @@ const Messages: React.FC<OwnPropsType> = (props) => {
             <RSidebar 
                 content={
                     <>
-                        <WidgetFriends friends={props.friends}/>
-                        <div className="wrapMessageWidgetYofamiliar"><WidgetYofamiliar users={props.users}/></div>
-                        <div className="wrapMessgeWidgetPeople"><WidgetPeople users={props.users}/></div>
+                        {/* <WidgetFriends friends={props.friends}/> */}
+                        {/* <div className="wrapMessageWidgetYofamiliar"><WidgetYofamiliar users={props.users}/></div>
+                        <div className="wrapMessgeWidgetPeople"><WidgetPeople users={props.users}/></div> */}
                     </>
                 }
 

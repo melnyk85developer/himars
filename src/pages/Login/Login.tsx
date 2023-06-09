@@ -46,7 +46,7 @@ type MapDispatchPropsType = {
         rememberMe: boolean, 
         captcha: string | any) => void
 }
-type LoginFormValuesType = {
+export type LoginFormValuesType = {
     captcha: string
     rememberMe: boolean
     password: string

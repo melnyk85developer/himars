@@ -643,7 +643,22 @@ const hiMarsApi = {
 
 
     companions: [
-
+        {
+            id: 1,
+            name: "Vasek"
+        },
+        {
+            id: 2,
+            name: "Sveta"
+        },
+        {
+            id: 3,
+            name: "Grinya"
+        },
+        {
+            id: 4,
+            name: "lusek"
+        }
     ],
     // messages: [
     //     {

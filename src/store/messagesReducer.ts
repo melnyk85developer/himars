@@ -3,10 +3,12 @@ import HiMarsMoks from "../fixtures/HiMarsMoks";
 import { InferActionsTypes } from './reduxStore';
 
 const messages = HiMarsMoks.messages;
+const companions = HiMarsMoks.companions;
 
 type CompanionsType = {
     id: number
     name: string
+    avatar: string
 }
 type MessagesType = {
     id: string
@@ -14,7 +16,7 @@ type MessagesType = {
 }
 
 let initialState = {
-    companions: [] as Array<CompanionsType>,
+    companions: companions as Array<CompanionsType>,
     messages: messages as Array<MessagesType | any>
 }
 
