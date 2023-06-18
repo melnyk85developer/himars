@@ -1,11 +1,10 @@
-import axios from "axios";
+import { instance, GetItemsType } from "./api";
 
 export const friendsAPI = {
-    getFriends() {
-        const options = {
-            method: 'GET',
-            url: 'https://63bb6f93cf99234bfa5b1191.mockapi.io/users'
-        }
-        return axios.request(options);
+    getFriends(currentPage = 1, pageSize = 10){
+        return (
+            instance.get<GetItemsType>(`users?page=${currentPage}&count=${pageSize}`)
+            .then(res => res.data)
+        )
     }
-} 
+}

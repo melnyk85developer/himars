@@ -11,7 +11,6 @@ let initialState = {
     profile: null as ProfileType | null,
     posts: posts as Array<PostType | any>,
     status: '',
-    newPostText: ''
 }
 const profileReducer = (state = initialState, action: ActionsType): InitialStateType => {
 
@@ -25,8 +24,7 @@ const profileReducer = (state = initialState, action: ActionsType): InitialState
             };
             return { 
                 ...state,
-                posts: [...state.posts, newPost],
-                newPostText: ''
+                posts: [...state.posts, newPost]
             }
         }
         case 'PROFILE/SET_STATUS': {
@@ -53,14 +51,14 @@ export const actions = {
     addPostActionCreator: (newPostText: string) => ({type: 'PROFILE/ADD-POST', newPostText} as const),
     setProfile: (profile: ProfileType) => ({type: 'PROFILE/SET-PROFILE', profile} as const),
     setStatus: (status: string) => ({type: 'PROFILE/SET_STATUS', status} as const),
-    deletePost: (postId: number) => ({type: 'PROFILE/DELETE_POST', postId} as const),
+    deletePost: (postId: number | null | string) => ({type: 'PROFILE/DELETE_POST', postId} as const),
     savePhotoSuccess: (photos: PhotosType) => ({type: 'PROFILE/SAVE_PHOTO_SUCCESS', photos} as const)
 }
-export const getProfile = (userId: number): ThunkType => async (dispatch) => {
+export const getProfile = (userId: number | null | string): ThunkType => async (dispatch) => {
     const data = await profileAPI.getProfile(userId);
     dispatch(actions.setProfile(data));
 }
-export const getStatus = (userId: number): ThunkType => async (dispatch) => {
+export const getStatus = (userId: number | null | string): ThunkType => async (dispatch) => {
     const data = await profileAPI.getStatus(userId);
     dispatch(actions.setStatus(data))
 }

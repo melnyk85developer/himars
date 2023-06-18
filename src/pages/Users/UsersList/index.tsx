@@ -27,12 +27,11 @@ const UsersList: React.FC<PropsType> = (props) => {
             </div>
             {props.users.map( user => (
                 <UsersItem 
-                    key={user.id} 
+                    key={user.id}
                     user={user}
                     follow={props.follow}
                     unfollow={props.unfollow}
-                    followingInProgress={props.followingInProgress}
-                />
+                    followingInProgress={props.followingInProgress} userDetailPage={undefined}                />
             ))}
         </div> 
     )

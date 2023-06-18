@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { routeMain as  routeProfile} from "pages/Profile";
+import { routeMain as  routeProfile} from "pages/Profile/ProfileContainer";
 import "./styles.scss";
 
 const YouAreFamiliarItem = (props) => {

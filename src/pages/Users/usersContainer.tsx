@@ -1,6 +1,6 @@
 import React, { useEffect }  from "react";
-import Users from "./index.jsx";
-import routeMain from "./routes.js";
+import Users from "./index";
+import routeMain from "./routes";
 import { withAuthRedirect } from "hoc/withAuthRedirect";
 import { connect } from 'react-redux';
 import { compose } from "redux";
@@ -14,7 +14,7 @@ import {
         getCurrentPage,
         getIsFetching,
         getFollowingInProgress } from "store/usersSelectors";
-import { UserType } from "types/types.js";
+import { UserType } from "types/types";
 import { AppStateType } from "store/reduxStore";
 
 type MapStatePropsType = {
@@ -71,7 +71,7 @@ let mapStateToProps = (state: AppStateType): MapStatePropsType => {
     }
 }
 export {routeMain};
-export default compose(
+export default compose<React.ComponentType>(
     withAuthRedirect,
     connect
         <MapStatePropsType, 

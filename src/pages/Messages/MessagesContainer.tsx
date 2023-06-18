@@ -16,7 +16,8 @@ type PropsType = {
 }
 
 const MessagesContainer: React.FC<PropsType> = (props) => {
-    const [usersList, setUsersList] = useState(props.messagesPage.companions);
+    const companions = props.messagesPage.companions
+    const [usersList, setUsersList] = useState(companions);
 
     useEffect(() => {
         setUsersList(usersList)
@@ -24,7 +25,7 @@ const MessagesContainer: React.FC<PropsType> = (props) => {
         //     // setUsersList(response.data)
         //     setUsersList(usersList)
         // }) 
-    }, [])
+    }, [usersList])
     
     return  <Messages 
                 sendMessage={props.sendMessage} 
@@ -40,7 +41,7 @@ let mapStateToProps = (state: AppStateType) => {
 }
 
 export {routeMain};
-export default compose(
+export default compose<React.ComponentType>(
     connect(mapStateToProps, {...actions}),
-    // withAuthRedirect
+    withAuthRedirect
 )(MessagesContainer);

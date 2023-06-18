@@ -1,10 +1,10 @@
 import React from "react";
 import routeMain from "./routes";
-import LSidebar from "../../components/LSidebar/index.js";
-import RSidebar from "../../components/RSidebar/index.js";
-import MessageItem from "./MessageItem/index.js";
-import CompanionItem from "./CompanionItem/index.js";
-import MessageList from "./MessageList/index.js";
+import LSidebar from "../../components/LSidebar";
+import RSidebar from "../../components/RSidebar";
+import MessageItem from "./MessageItem";
+import CompanionItem from "./CompanionItem";
+import MessageList from "./MessageList";
 import AddMessageForm from "./AddMessageForm/AddMessageForm";
 import { InitialStateType } from "store/messagesReducer";
 // import WidgetFriends from "../../components/Widgets/WidgetFriends/index.js";
@@ -12,7 +12,7 @@ import { InitialStateType } from "store/messagesReducer";
 // import WidgetYofamiliar from "../../components/Widgets/WidgetYofamiliar/index.js";
 import "./styles.scss";
 
-type PropsType = {
+export type PropsType = {
     messagesPage: InitialStateType
     companions: InitialStateType
     sendMessage: (massageText: string) => void
@@ -26,11 +26,11 @@ const Messages: React.FC<PropsType> = (props) => {
 
     const companion = props.messagesPage.companions
         .map( (companion) => <CompanionItem
-            key={companion.id} 
+            key={companion.id}
             id={companion.id}
             avatar={companion.avatar}
-            name={companion.name}
-            // surname={companion.surname}
+            name={companion.name} 
+            surname={companion.surname}
 
         />)
 
