@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { compose } from "redux";
-import { withAuthRedirect } from "hoc/withAuthRedirect";
-import { friendsAPI } from "services/friendsApi";
+import { withAuthRedirect } from "../../hoc/withAuthRedirect";
+import { friendsAPI } from "../../services/friendsApi";
 import { connect } from "react-redux";
-import { InitialStateType, actions } from "store/messagesReducer";
-import { AppStateType } from "store/reduxStore";
+import { InitialStateType, actions } from "../../store/messagesReducer";
+import { AppStateType } from "../../store/reduxStore";
 import Messages from "./index";
 import routeMain from "./routes";
 import "./styles.scss";

@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { routeMain as routeAuthorization } from 'pages/Login/Login';
+import { routeMain as routeAuthorization } from '../../pages/Login/Login';
 import "./styles.scss";
 
 export type MapPropsType = {

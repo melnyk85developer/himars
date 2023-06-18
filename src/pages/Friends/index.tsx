@@ -3,7 +3,7 @@ import React from "react";
 import routeMain from "./routes";
 import FriendsList from "./FriendsList";
 import "./styles.scss";
-import { UserType } from "types/types";
+import { UserType } from "../../types/types";
 
 type PropsType = {
     friends: Array<UserType>

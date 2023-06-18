@@ -2,11 +2,11 @@ import React from "react";
 import UsersList from "./UsersList";
 import LSidebar from "../../components/LSidebar";
 import RSidebar from "../../components/RSidebar";
-import Preloader from "components/Priloader";
+import Preloader from "../../components/Priloader";
 // import WidgetFriends from "../../components/Widgets/WidgetFriends";
 // import WidgetPeople from "../../components/Widgets/WidgetsPeople";
 // import WidgetYofamiliar from "../../components/Widgets/WidgetYofamiliar";
-import { UserType } from "types/types";
+import { UserType } from "../../types/types";
 import "./styles.scss";
 
 type PropsType = {

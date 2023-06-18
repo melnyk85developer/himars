@@ -1,9 +1,9 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { routeMain as  routeProfile} from "pages/Profile/ProfileContainer";
+import { routeMain as  routeProfile} from "../../../pages/Profile/ProfileContainer";
 import userPhoto from "../../../assets/user.png"
 import "./styles.scss";
-import { UserType } from "types/types";
+import { UserType } from "../../../types/types";
 
 type PropsType = {
     friends: UserType

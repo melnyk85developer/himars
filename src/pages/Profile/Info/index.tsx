@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ProfileStatusWithHooks from "./ProfileStatusWithHooks";
 import ProfileDataForm from "./ProfileDataForm";
-import { ContactsType, ProfileType } from "types/types";
+import { ContactsType, ProfileType } from "../../../types/types";
 import "./styles.scss";
 
 type PropsType = {

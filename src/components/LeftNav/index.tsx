@@ -9,7 +9,7 @@ import { routeMain as routeShops } from '../../pages/Shops';
 import { routeMain as routeVideo } from '../../pages/Video';
 import { routeMain as routeFriends } from '../../pages/Friends/index';
 import { routeMain as routeUsers } from '../../pages/Users/usersContainer';
-import { AppStateType } from "store/reduxStore";
+import { AppStateType } from "../../store/reduxStore";
 import "./styles.scss";
 
 type PropsType = {

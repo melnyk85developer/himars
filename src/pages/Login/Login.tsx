@@ -1,12 +1,12 @@
 import React from "react";
-import { routeMain as routeProfile } from "pages/Profile/ProfileContainer";
+import { routeMain as routeProfile } from "../../pages/Profile/ProfileContainer";
 import { InjectedFormProps, reduxForm } from "redux-form";
-import { GetStringKeys, Input, createFild } from "components/FormsControls/FormsControls";
-import { required } from "utils/validators/validators";
+import { GetStringKeys, Input, createFild } from "../../components/FormsControls/FormsControls";
+import { required } from "../../utils/validators/validators";
 import { connect } from "react-redux";
 import { login } from '../../store/authReducer';
 import { Navigate } from "react-router-dom";
-import { AppStateType } from "store/reduxStore";
+import { AppStateType } from "../../store/reduxStore";
 import routeMain from "./routes";
 
 type LoginFormOwnProps = {

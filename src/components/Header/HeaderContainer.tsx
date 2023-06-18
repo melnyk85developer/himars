@@ -1,8 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { logout } from 'store/authReducer';
+import { logout } from '../../store/authReducer';
 import Header, { DispatchPropsType, MapPropsType } from './Header';
-import { AppStateType } from 'store/reduxStore';
+import { AppStateType } from '../../store/reduxStore';
 
 class HeaderContainer extends React.Component<MapPropsType & DispatchPropsType> {
     render(){

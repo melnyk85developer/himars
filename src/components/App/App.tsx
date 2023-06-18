@@ -1,10 +1,10 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
-import { initializeAppContent } from 'store/appContentReducer';
+import { initializeAppContent } from '../../store/appContentReducer';
 import { HashRouter, BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import store, { AppStateType } from 'store/reduxStore';
+import store, { AppStateType } from '../../store/reduxStore';
 import AppContent from '../AppContent';
 import './index.scss';
 

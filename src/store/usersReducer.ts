@@ -1,6 +1,6 @@
-import { usersAPI } from "services/usersApi";
-import { UserType } from "types/types";
-import { updateObjectInArray } from "utils/objectHelpers";
+import { usersAPI } from "../services/usersApi";
+import { UserType } from "../types/types";
+import { updateObjectInArray } from "../utils/objectHelpers";
 import { InferActionsTypes, BaseThunkType } from "./reduxStore";
 import { Dispatch } from "react";
 

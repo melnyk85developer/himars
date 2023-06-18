@@ -1,5 +1,5 @@
-import { friendsAPI } from "services/friendsApi";
-import { UserType } from "types/types";
+import { friendsAPI } from "../services/friendsApi";
+import { UserType } from "../types/types";
 import { BaseThunkType, InferActionsTypes } from "./reduxStore";
 
 let initialState = {

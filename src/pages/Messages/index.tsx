@@ -6,7 +6,7 @@ import MessageItem from "./MessageItem";
 import CompanionItem from "./CompanionItem";
 import MessageList from "./MessageList";
 import AddMessageForm from "./AddMessageForm/AddMessageForm";
-import { InitialStateType } from "store/messagesReducer";
+import { InitialStateType } from "../../store/messagesReducer";
 // import WidgetFriends from "../../components/Widgets/WidgetFriends/index.js";
 // import WidgetPeople from "../../components/Widgets/WidgetsPeople/index.js";
 // import WidgetYofamiliar from "../../components/Widgets/WidgetYofamiliar/index.js";

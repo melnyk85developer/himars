@@ -1,21 +1,21 @@
 import React, { useEffect }  from "react";
 import Users from "./index";
 import routeMain from "./routes";
-import { withAuthRedirect } from "hoc/withAuthRedirect";
+import { withAuthRedirect } from "../../hoc/withAuthRedirect";
 import { connect } from 'react-redux';
 import { compose } from "redux";
 import { follow, 
             unfollow, 
-            requestUsers } from "store/usersReducer";
+            requestUsers } from "../../store/usersReducer";
 import { 
         getUsers,
         getPageSize, 
         getTotalUsersCount,
         getCurrentPage,
         getIsFetching,
-        getFollowingInProgress } from "store/usersSelectors";
-import { UserType } from "types/types";
-import { AppStateType } from "store/reduxStore";
+        getFollowingInProgress } from "../../store/usersSelectors";
+import { UserType } from "../../types/types";
+import { AppStateType } from "../../store/reduxStore";
 
 type MapStatePropsType = {
     totalUsersCount: number

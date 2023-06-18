@@ -1,6 +1,6 @@
-import { ResultCodeForCaptchaEnum, ResultCodesEnum } from "services/api";
-import { authAPI } from "services/authApi";
-import { securityAPI } from "services/securityApi";
+import { ResultCodeForCaptchaEnum, ResultCodesEnum } from "../services/api";
+import { authAPI } from "../services/authApi";
+import { securityAPI } from "../services/securityApi";
 import { stopSubmit } from "redux-form";
 import { BaseThunkType } from "./reduxStore";
 import { InferActionsTypes } from "./reduxStore";

@@ -1,8 +1,8 @@
 import React, { MouseEventHandler } from "react";
 import { NavLink } from "react-router-dom";
-import { routeMain as  routeProfile} from "pages/Profile";
+import { routeMain as  routeProfile} from "../../../pages/Profile";
 import userPhoto from "../../../assets/user.png";
-import { UserType } from "types/types";
+import { UserType } from "../../../types/types";
 import "./styles.scss";
 
 type PropsType = {

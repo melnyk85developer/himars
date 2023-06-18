@@ -1,10 +1,10 @@
 import React from "react";
 import FriendsItem from "../FriendsItem";
-import LSidebar from "components/LSidebar";
+import LSidebar from "../../../components/LSidebar";
 // import WidgetYofamiliar from "components/Widgets/WidgetYofamiliar";
 // import WidgetPeople from "components/Widgets/WidgetsPeople";
-import RSidebar from "components/RSidebar";
-import { UserType } from "types/types";
+import RSidebar from "../../../components/RSidebar";
+import { UserType } from "../../../types/types";
 import "./styles.scss";
 
 type PropsType = {

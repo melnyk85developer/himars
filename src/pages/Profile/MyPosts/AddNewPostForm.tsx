@@ -1,8 +1,8 @@
 import React from "react";
-import { GetStringKeys, Input, createFild } from "components/FormsControls/FormsControls";
+import { GetStringKeys, Input, createFild } from "../../../components/FormsControls/FormsControls";
 import {InjectedFormProps, reduxForm } from "redux-form";
-import { required, maxLengthCreator } from "utils/validators/validators";
-import { PostType } from "types/types";
+import { required, maxLengthCreator } from "../../../utils/validators/validators";
+import { PostType } from "../../../types/types";
 import "./styles.scss";
 
 export type AddPostFormValuesType = {

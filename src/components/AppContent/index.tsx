@@ -1,10 +1,10 @@
 import React, { Suspense, useEffect } from 'react';
 import { Routes, Route, Navigate} from 'react-router-dom';
 // import { withSuspense } from '../../hoc/withSuspense';
-import Authorization, { routeMain as routeAuthorization } from 'pages/Login/Login';
+import Authorization, { routeMain as routeAuthorization } from '../../pages/Login/Login';
 import ProfileContainer, { routeMain as routeProfile }  from '../../pages/Profile';
 // import Dialog, { routeMain as routeDialog } from '../../pages/Dialog';
-import UsersContainer, { routeMain as routeUsers } from 'pages/Users/usersContainer';
+import UsersContainer, { routeMain as routeUsers } from '../../pages/Users/usersContainer';
 import MessagesContainer , { routeMain as routeMessages }  from '../../pages/Messages/MessagesContainer';
 import Music, { routeMain as routeMusic } from '../../pages/Music';
 import Shops, { routeMain as routeShops } from '../../pages/Shops';
@@ -12,12 +12,12 @@ import FriendsContainer, { routeMain as routeFriends } from '../../pages/Friends
 import HeaderContainer from '../Header/HeaderContainer';
 import Footer from '../Footer/Footer';
 import LeftNav from '../LeftNav';
-import Preloader from 'components/Priloader';
+import Preloader from '../../components/Priloader';
 import { routeMain as routeVideo } from '../../pages/Video';
 import Home, { routeMain as routeHome } from '../../pages/Home';
 import Contacts, { routeMain as routeContacts } from '../../pages/Contacts';
 import News, { routeMain as routeNews } from '../../pages/News';
-import { DispatchPropsType, MapPropsType } from 'components/App/App';
+import { DispatchPropsType, MapPropsType } from '../../components/App/App';
 import './styles.scss';
 
 const Video = React.lazy(() => import('../../pages/Video'))

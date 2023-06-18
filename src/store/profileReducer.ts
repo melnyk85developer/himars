@@ -1,7 +1,7 @@
 import { v1 as uuidv1 } from 'uuid';
-import { profileAPI } from 'services/profileApi';
+import { profileAPI } from '../services/profileApi';
 import { FormAction, stopSubmit } from "redux-form";
-import { ProfileType, PostType, PhotosType } from 'types/types';
+import { ProfileType, PostType, PhotosType } from '../types/types';
 import HiMarsMoks from "../fixtures/HiMarsMoks";
 import { BaseThunkType, InferActionsTypes } from './reduxStore';
 

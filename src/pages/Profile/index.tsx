@@ -9,7 +9,7 @@ import RSidebar from "../../components/RSidebar";
 // import WidgetYofamiliar from "../../components/Widgets/WidgetYofamiliar";
 import Info from "./Info/index";
 import MyPostsContainer from "./MyPosts/MyPostsContainer";
-import Preloader from "components/Priloader";
+import Preloader from "../../components/Priloader";
 import { PropsProfileType } from "./ProfileContainer";
 import "./styles.scss";
 

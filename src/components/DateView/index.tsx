@@ -1,5 +1,5 @@
 import React from "react";
-import prepareDate from "utils/prepareDate";
+import prepareDate from "../../utils/prepareDate";
 import "./styles.scss";
 
 type PropsType = {

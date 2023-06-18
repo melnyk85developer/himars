@@ -1,20 +1,20 @@
 import React, { useEffect, useState } from "react";
 import { compose } from "redux";
-import { withAuthRedirect } from "hoc/withAuthRedirect";
+import { withAuthRedirect } from "../../hoc/withAuthRedirect";
 import Friends from ".";
-import { routeMain } from "pages/Friends";
+import { routeMain } from "../../pages/Friends";
 import { 
     getFriends,
     getPageSize, 
     getTotalFriendsCount,
     getCurrentPage,
     getIsFetching,
-    getFollowingInProgress } from "store/friendsSelectors";
-import { requestFriends } from "store/friendsReducer";
+    getFollowingInProgress } from "../../store/friendsSelectors";
+import { requestFriends } from "../../store/friendsReducer";
 
-import { UserType } from "types/types";
+import { UserType } from "../../types/types";
 import { connect } from "react-redux";
-import { AppStateType } from "store/reduxStore";
+import { AppStateType } from "../../store/reduxStore";
 
 type MapStatePropsType = {
     totalFriendsCount: number

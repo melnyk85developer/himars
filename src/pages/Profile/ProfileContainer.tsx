@@ -9,10 +9,10 @@ import {
     getStatus, 
     updateStatus, 
     savePhoto,
-    saveProfile } from "store/profileReducer";
-import { withAuthRedirect } from "hoc/withAuthRedirect";
-import { AppStateType } from "store/reduxStore";
-import { ProfileType } from 'types/types';
+    saveProfile } from "../../store/profileReducer";
+import { withAuthRedirect } from "../../hoc/withAuthRedirect";
+import { AppStateType } from "../../store/reduxStore";
+import { ProfileType } from '../../types/types';
 
 type MapPropsType = ReturnType<typeof mapStateToProps>
 
