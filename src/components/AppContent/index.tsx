@@ -19,7 +19,6 @@ import Contacts, { routeMain as routeContacts } from '../../pages/Contacts';
 import News, { routeMain as routeNews } from '../../pages/News';
 import { DispatchPropsType, MapPropsType } from 'components/App/App';
 import './styles.scss';
-import { ProfileType } from 'types/types';
 
 const Video = React.lazy(() => import('../../pages/Video'))
 
