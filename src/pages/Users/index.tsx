@@ -45,9 +45,7 @@ const Users: React.FC<PropsType> = (props) => {
                             users={props.users}
                             follow={props.follow} 
                             unfollow={props.unfollow} 
-                            // toggleFollowingProgress={props.toggleFollowingProgress} 
                             followingInProgress={props.followingInProgress} 
-
                             pageSize={props.pageSize} 
                             totalItemsCount={props.totalUsersCount} 
                             onPageChanged={props.onPageChanged} 
