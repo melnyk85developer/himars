@@ -19,13 +19,14 @@ type PropsType = {
 const LeftNav: React.FC<PropsType> = (props) => {
     
     const userId = props.authorizedUserId
+    // console.log(userId)
     
     return (
         <nav className="Left_nav">
             <div className="Left_menu">
                 <div className="LSidebar_Nav">
                     <ul>
-                        <li><NavLink to={routeProfile()} >Profile</NavLink></li>
+                        <li><NavLink to={routeProfile(userId)} >Profile</NavLink></li>
                         <li><NavLink to={routeMessages()} >Message</NavLink></li>
                         <li><NavLink to={routeFriends()} >Friends</NavLink></li>
                         <li><NavLink to={routeMusic()} >Music</NavLink></li>

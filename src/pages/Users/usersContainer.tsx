@@ -70,6 +70,7 @@ let mapStateToProps = (state: AppStateType): MapStatePropsType => {
         followingInProgress: getFollowingInProgress(state)
     }
 }
+
 export {routeMain};
 export default compose<React.ComponentType>(
     withAuthRedirect,

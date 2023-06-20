@@ -43,6 +43,8 @@ export const requestFriends = (page: number,
         dispatch(actions.toggleIsFetching(true));
         dispatch(actions.setCurrentPage(page));
         const data = await friendsAPI.getFriends(page, pageSize);
+    console.log(data)
+
         dispatch(actions.toggleIsFetching(false));
         dispatch(actions.setFriends(data.items));
         dispatch(actions.setFriendsTotalCount(data.totalCount));

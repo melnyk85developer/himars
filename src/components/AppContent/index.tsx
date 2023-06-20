@@ -2,7 +2,7 @@ import React, { Suspense, useEffect } from 'react';
 import { Routes, Route, Navigate} from 'react-router-dom';
 // import { withSuspense } from '../../hoc/withSuspense';
 import Authorization, { routeMain as routeAuthorization } from '../../pages/Login/Login';
-import ProfileContainer, { routeMain as routeProfile }  from '../../pages/Profile';
+import ProfileContainer, { routeMain as routeProfile }  from '../../pages/Profile/ProfileContainer';
 // import Dialog, { routeMain as routeDialog } from '../../pages/Dialog';
 import UsersContainer, { routeMain as routeUsers } from '../../pages/Users/usersContainer';
 import MessagesContainer , { routeMain as routeMessages }  from '../../pages/Messages/MessagesContainer';

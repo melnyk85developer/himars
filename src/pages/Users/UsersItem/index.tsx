@@ -17,6 +17,8 @@ const UsersItem: React.FC<PropsType> = (props) => {
 
     let id = props.user.id
 
+
+
     return (
         <section className="wrapUsersItem">
             <div className="usersItem">

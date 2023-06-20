@@ -53,7 +53,7 @@ export const actions = {
 }
 export const requestUsers = (page: number, 
     pageSize: number): ThunkType => {
-    return async (dispatch: any, getState: any) => {
+    return async (dispatch, getState) => {
         dispatch(actions.toggleIsFetching(true));
         dispatch(actions.setCurrentPage(page));
         const data = await usersAPI.getUsers(page, pageSize);
@@ -64,8 +64,8 @@ export const requestUsers = (page: number,
 }
 const _followUnfollowFlow = async (dispatch: Dispatch<ActionsTypes>, userId: number, apiMethod: any, actionCreator: (userId: number) => ActionsTypes) => {
     dispatch(actions.toggleFollowingProgress(true, userId));
-    const response = await apiMethod(userId);
-    if(response.data.resultCode === 0){
+    const data = await apiMethod(userId);
+    if(data.resultCode === 0){
         dispatch(actionCreator(userId));
     }
     dispatch(actions.toggleFollowingProgress(false, userId));

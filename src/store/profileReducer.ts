@@ -10,7 +10,7 @@ const posts = HiMarsMoks.posts;
 let initialState = {
     profile: null as ProfileType | null,
     posts: posts as Array<PostType | any>,
-    status: '',
+    status: ''
 }
 const profileReducer = (state = initialState, action: ActionsType): InitialStateType => {
 
@@ -54,7 +54,7 @@ export const actions = {
     deletePost: (postId: number | null | string) => ({type: 'PROFILE/DELETE_POST', postId} as const),
     savePhotoSuccess: (photos: PhotosType) => ({type: 'PROFILE/SAVE_PHOTO_SUCCESS', photos} as const)
 }
-export const getProfile = (userId: number | null | string): ThunkType => async (dispatch) => {
+export const getProfile = (userId: number): ThunkType => async (dispatch) => {
     const data = await profileAPI.getProfile(userId);
     dispatch(actions.setProfile(data));
 }

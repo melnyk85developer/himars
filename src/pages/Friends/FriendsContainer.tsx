@@ -40,7 +40,6 @@ const FriendsContainer: React.FC<PropsType> = (props) => {
         //     setFriendsList(response.data.filter( item => item.followed === true));
         // }) 
     }, [])
-    console.log(props.friends)
 
     return <Friends friends={props.friends}/>
 }
@@ -55,7 +54,7 @@ let mapStateToProps = (state: AppStateType): MapStatePropsType => {
     }
 }
 export {routeMain};
-export default compose<React.ComponentType>(
+export default compose<React.FC>(
     withAuthRedirect,
     connect
         <MapStatePropsType, 

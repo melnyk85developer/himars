@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import Profile from "./index";
+import { routeMain as routeLogin } from "../Login/Login";
 import routeMain  from './routes';
 import { compose } from "redux";
 import { connect } from "react-redux";
@@ -16,58 +17,45 @@ import { ProfileType } from '../../types/types';
 
 type MapPropsType = ReturnType<typeof mapStateToProps>
 
-type DispatchPropsType = {
-    profile: ProfileType
-    status: string
-    isOwner: boolean
-
-    getProfile: (userId: number | null) => void
+export type DispatchPropsType = {
+    getProfile: (userId: number | null | string | undefined) => void
     getStatus: (userId: number | null) => void
-    updateStatus: (status: string) => void
-    savePhoto: (file: File) => void
-    saveProfile: (profile: ProfileType) => Promise<any>
 }
 export type PropsProfileType = {
     profile: ProfileType | null
     status: string
     isOwner: boolean
-    updateStatus: (status: string) => void
     savePhoto: (file: File) => void
+    updateStatus: (status: string) => void
     saveProfile: (profile: ProfileType) => Promise<any>
 }
-
-export type PropsType = MapPropsType & 
-                DispatchPropsType & 
-                PropsProfileType
+export type PropsType = MapPropsType & DispatchPropsType & PropsProfileType
 
 const ProfileContainer: React.FC<PropsType> = (props) => {
     const {id} = useParams<Record<string, string | undefined>>();
-    const userId: number = Number(id);
+    const userId = id;
 
-    console.log(props.profile)
-
-    const refreshProfile = (userId: number | null | string) => {
-        if(userId === "id"){
+    const refreshProfile = (userId: string | undefined | number | null) => {
+        if(userId === undefined){
             userId = props.authorizedUserId
-            if(!userId){
-                <Navigate to={"/authorization"} />
+            if(userId === undefined){
+                <Navigate to={routeLogin()} />
             }
             props.getProfile(userId)
             props.getStatus(userId)
-
-            console.log(userId)
 
         }else{
             props.getProfile(userId as number)
             props.getStatus(userId as number)
         }
     }
+
     useEffect(() => {
         refreshProfile(userId);
     }, [userId])
     
     return <Profile 
-                isOwner={userId === null ? true : false} 
+                isOwner={userId === undefined ? true : false} 
                 savePhoto={props.savePhoto}  
                 status={props.status} 
                 updateStatus={props.updateStatus} 
@@ -82,7 +70,7 @@ let mapStateToProps = (state: AppStateType) => ({
     isAuth: state.auth.isAuth
 })
 export {routeMain}
-export default compose<React.ComponentType>(
+export default compose<React.FC>(
     connect(mapStateToProps, {
         getProfile, 
         getStatus, 

@@ -4,7 +4,6 @@ import { UserType } from "../types/types";
 export const instance = axios.create({
     withCredentials: true,
     baseURL: 'https://social-network.samuraijs.com/api/1.0/',
-    // baseURL: 'https://63bb6f93cf99234bfa5b1191.mockapi.io/users/',
     headers: {
         "API-KEY": "d84c187e-a024-40d1-aa18-965665532015"
     }

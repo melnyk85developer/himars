@@ -21,10 +21,6 @@ const MessagesContainer: React.FC<PropsType> = (props) => {
 
     useEffect(() => {
         setUsersList(usersList)
-        // friendsAPI.getFriends().then(response => {
-        //     // setUsersList(response.data)
-        //     setUsersList(usersList)
-        // }) 
     }, [usersList])
     
     return  <Messages 

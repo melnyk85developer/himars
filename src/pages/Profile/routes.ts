@@ -1,4 +1,4 @@
 
-const routeMain = (userId: number | null | string = "id") => `/profile/${userId}`;
+const routeMain = (userId?: number | null | string) => `/profile/${userId}`;
 
 export default routeMain
