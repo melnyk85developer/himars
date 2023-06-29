@@ -5,4 +5,4 @@ function filterByTerm(inputArr, searchTerm) {
       return arrayElement.url.match(regex);
     });
 }
-module.exports = filterByTerm;
+export default filterByTerm;

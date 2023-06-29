@@ -7,7 +7,7 @@ import "./styles.scss";
 
 type PropsType = {
     userDetailPage: MouseEventHandler<HTMLImageElement> | undefined;
-    user: UserType
+    user: UserType | any
     followingInProgress: Array<number>
     unfollow: (userId: number) => void
     follow: (userId: number) => void
@@ -16,8 +16,6 @@ type PropsType = {
 const UsersItem: React.FC<PropsType> = (props) => {
 
     let id = props.user.id
-
-
 
     return (
         <section className="wrapUsersItem">

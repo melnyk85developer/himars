@@ -6,7 +6,7 @@ import "./styles.scss";
 import { UserType } from "../../../types/types";
 
 type PropsType = {
-    friends: UserType
+    friends: UserType | any
 }
 
 const friendItem: React.FC<PropsType> = (props) => {

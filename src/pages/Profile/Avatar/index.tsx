@@ -4,7 +4,7 @@ import "./styles.scss";
 
 type PropsType = {
     isOwner: boolean;
-    avatar: string | undefined;
+    avatar: string | any
     savePhoto: (file: File) => void
 }
 

@@ -7,9 +7,9 @@ export const usersAPI = {
             .then(res => res.data)
         )
     },
-    follow(id: number){
-        return instance.post<APIResponseType>(`follow/${id}`)
-            .then(res => res.data)
+    async follow(id: number){
+        const res = await instance.post<APIResponseType>(`follow/${id}`);
+        return res.data;
     },
     unfollow(id: number){
         return instance.delete(`follow/${id}`)

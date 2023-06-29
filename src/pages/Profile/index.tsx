@@ -26,7 +26,7 @@ const Profile: React.FC<PropsProfileType> = (props) => {
                                     key={props.profile.userId}
                                     isOwner={props.isOwner}
                                     savePhoto={props.savePhoto}
-                                    avatar={props.profile.photos.small} />
+                                    avatar={props.profile.photos.small}/>
                                 <div className="wrapWidgetFriendsProfile">
                                     {/* <WidgetFriends friends={store.getState().profilePage.friends} /> */}
                                 </div>

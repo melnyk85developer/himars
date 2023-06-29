@@ -25,11 +25,11 @@ export type ContactsType = {
     mainLink: string
 }
 export type PhotosType = {
-    small: string
-    large: string
+    small: string | undefined | null | number
+    large: string | undefined | null | number
 }
 export type UserType = {
-    id: number
+    id: number | null
     name: string
     surname: string
     status: string
