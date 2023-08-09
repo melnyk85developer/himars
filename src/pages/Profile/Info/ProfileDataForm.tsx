@@ -14,16 +14,20 @@ const ProfileDataForm: React.FC<InjectedFormProps<ProfileType, PropsType> & Prop
             <button>Сохранить</button>
             { error && <div className={"formSummaryError"}>{error}</div>}
             <div className="name">
-                <h6>Name : {createFild<PropsTypeKeys>("Full name", "fullName", [], Input)}</h6>
+                <h6>Name : 
+                    {createFild<PropsTypeKeys>("Full name", "fullName", [], Input)}</h6>
             </div>
             <div className="aboutMe">
-                <h6>About Me : { createFild<PropsTypeKeys>("About Me", "aboutMe", [], Textarea) }</h6>
+                <h6>About Me : 
+                    { createFild<PropsTypeKeys>("About Me", "aboutMe", [], Textarea) }</h6>
             </div>
             <div className="lookingForAJob">
-                <h6>Looking For A Job : { createFild<PropsTypeKeys>("", "lookingForAJob", [], Input, {type: "checkbox"}) }</h6>
+                <h6>Looking For A Job : 
+                    { createFild<PropsTypeKeys>("", "lookingForAJob", [], Input, {type: "checkbox"}) }</h6>
             </div>
             <div className="lookingForAJobDescription">
-                <h6>My professional skils : { createFild<PropsTypeKeys>("My professional skils", "lookingForAJobDescription", [], Textarea) }</h6>
+                <h6>My professional skils : 
+                    { createFild<PropsTypeKeys>("My professional skils", "lookingForAJobDescription", [], Textarea) }</h6>
             </div>
             <div className="contacts">
                 <h6>Contacts :</h6>

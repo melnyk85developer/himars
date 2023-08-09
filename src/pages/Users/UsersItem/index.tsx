@@ -6,22 +6,25 @@ import { UserType } from "../../../types/types";
 import "./styles.scss";
 
 type PropsType = {
-    userDetailPage: MouseEventHandler<HTMLImageElement> | undefined;
     user: UserType | any
     followingInProgress: Array<number>
+    userDetailPage: MouseEventHandler<HTMLImageElement> | undefined;
     unfollow: (userId: number) => void
     follow: (userId: number) => void
 }
+type UserIdTypes = {
+    userId: string | undefined | number | null
+}
 
-const UsersItem: React.FC<PropsType> = (props) => {
+const UsersItem: React.FC<PropsType & UserIdTypes> = (props) => {
 
-    let id = props.user.id
+    let userId = props.user.id as string | undefined //===
 
     return (
         <section className="wrapUsersItem">
             <div className="usersItem">
                 <div className="wrapUserBlock_1">
-                    <NavLink to={routeProfile(id)} className="navLink">
+                    <NavLink to={routeProfile(userId)} className="navLink">
                         <div className="wrapUsersAvatar">
                             <img onClick={props.userDetailPage} 
                                  src={ props.user.photos.small != null 

@@ -13,13 +13,13 @@ import { AppStateType } from "../../store/reduxStore";
 import "./styles.scss";
 
 type PropsType = {
-    authorizedUserId: number | null
+    authorizedUserId: string | undefined
 }
 
 const LeftNav: React.FC<PropsType> = (props) => {
     
     const userId = props.authorizedUserId
-    // console.log(userId)
+    // console.log("nav" + " " + userId)
     
     return (
         <nav className="Left_nav">

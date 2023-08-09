@@ -7,7 +7,7 @@ beforeEach(() => {
     state = {
         users: [
             {
-                id: 0, 
+                id: "0", 
                 name: "Maksym 0",
                 surname: "Melnyk",
                 followed: false,
@@ -15,7 +15,7 @@ beforeEach(() => {
                 status: "status 0"
             },
             {
-                id: 1, 
+                id: "1", 
                 name: "Maksym 1",
                 surname: "Pupkin",
                 followed: false,
@@ -23,7 +23,7 @@ beforeEach(() => {
                 status: "status 1"
             },
             {
-                id: 2, 
+                id: "2", 
                 name: "Maksym 2",
                 surname: "Pupkin 2",
                 followed: true,
@@ -31,7 +31,7 @@ beforeEach(() => {
                 status: "status 2"
             },
             {
-                id: 3, 
+                id: "3", 
                 name: "Maksym 3",
                 surname: "Pupkin 3",
                 followed: true,

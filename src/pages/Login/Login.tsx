@@ -37,7 +37,7 @@ const LoginReduxForm = reduxForm<LoginFormValuesType, LoginFormOwnProps>({form: 
 type MapStatePropsType = {
     captchaUrl: string | null
     isAuth: boolean
-    authorizedUserId: number | null
+    authorizedUserId: string | undefined | number | null
 }
 type MapDispatchPropsType = {
     login: (

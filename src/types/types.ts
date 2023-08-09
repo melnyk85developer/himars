@@ -1,5 +1,5 @@
 export type ProfileType = {
-    userId: number | null | string
+    userId: string | undefined | number | null
     lookingForAJob: boolean
     lookingForAJobDescription: string
     fullName: string
@@ -7,6 +7,14 @@ export type ProfileType = {
     photos: PhotosType
     aboutMe: string
     // newPostText: string
+}
+export type UserType = {
+    id: number | null | string | undefined
+    name: string
+    surname: string
+    status: string
+    photos: PhotosType
+    followed: boolean
 }
 export type PostType = {
     id: string
@@ -27,12 +35,4 @@ export type ContactsType = {
 export type PhotosType = {
     small: string | undefined | null | number
     large: string | undefined | null | number
-}
-export type UserType = {
-    id: number | null
-    name: string
-    surname: string
-    status: string
-    photos: PhotosType
-    followed: boolean
 }

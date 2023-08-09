@@ -1,3 +1,4 @@
+import { APIResponseType } from "../services/api";
 import { usersAPI } from "../services/usersApi";
 import { UserType } from "../types/types";
 import { updateObjectInArray } from "../utils/objectHelpers";
@@ -36,7 +37,7 @@ const usersReducer = (state = initialState, action: ActionsTypes): InitialState 
             return { ...state, 
                 followingInProgress: action.isFetching 
                 ? [...state.followingInProgress, action.userId]
-                : state.followingInProgress.filter(id => id !== action.userId)
+                : state.followingInProgress.filter(userId => userId !== action.userId)
             }
         default:
             return state;
@@ -62,15 +63,19 @@ export const requestUsers = (page: number,
         dispatch(actions.setUsersTotalCount(data.totalCount));
     }
 }
-const _followUnfollowFlow = async (dispatch: Dispatch<ActionsTypes>, userId: number, apiMethod: any, actionCreator: (userId: number) => ActionsTypes) => {
+const _followUnfollowFlow = async (dispatch: Dispatch<ActionsTypes>, 
+                                                userId: number, 
+                                                apiMethod: (userId: number) => Promise<APIResponseType>, 
+                                                actionCreator: (userId: number) => ActionsTypes) => {
     dispatch(actions.toggleFollowingProgress(true, userId));
-    const data = await apiMethod(userId);
-    if(data.resultCode === 0){
+    const response = await apiMethod(userId);
+    
+    if(response.resultCode === 0){
         dispatch(actionCreator(userId));
     }
     dispatch(actions.toggleFollowingProgress(false, userId));
 }
-export const follow = (userId: number): ThunkType => {
+export const follow = (userId: number):ThunkType => {
     return async (dispatch) => {
         await _followUnfollowFlow(dispatch, userId, usersAPI.follow.bind(usersAPI), actions.followSuccess);
     }

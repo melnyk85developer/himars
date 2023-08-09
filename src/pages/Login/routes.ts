@@ -1,3 +1,3 @@
-const routeMain = (): string => {return "/login";}
+const routeMain = (): string => {return "/authorization";}
 
 export default routeMain;

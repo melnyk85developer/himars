@@ -6,7 +6,7 @@ import { BaseThunkType } from "./reduxStore";
 import { InferActionsTypes } from "./reduxStore";
 
 let initialState = {
-    id: null as number | null,
+    id: null as string | undefined | number | null,
     email: null as string | null,
     login: null as string | null,
     isAuth: false as boolean,

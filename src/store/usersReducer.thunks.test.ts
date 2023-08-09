@@ -2,7 +2,7 @@ import { follow } from "./usersReducer";
 import { usersAPI } from "../services/usersApi";
 import { APIResponseType, ResultCodesEnum } from "../services/api";
 
-jest.mock("../services/usersApi")
+jest.mock('../services/usersApi')
 const userAPIMock = usersAPI;
 
 const result: APIResponseType = {
@@ -13,11 +13,12 @@ const result: APIResponseType = {
 // @ts-ignore
 userAPIMock.follow.mockReturnValue(Promise.resolve(result));
 
-test("", async () => {
-    const thunk = follow(1)
+test('', async () => {
+    const thunk = follow(1);
     const dispatchMok = jest.fn();
+    
     // @ts-ignore
-    await thunk(dispatchMok)
+    await thunk(dispatchMok);
 
-    expect(dispatchMok).toBeCalledTimes(3)
+    expect(dispatchMok).toBeCalledTimes(3);
 })

@@ -1,4 +1,4 @@
-const prepareDate = (value) => {
+const prepareDate = (value: string) => {
     const newDate = new Date(value);
     return {
         day: newDate.getDay(),

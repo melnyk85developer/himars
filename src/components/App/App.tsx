@@ -22,7 +22,7 @@ const AppContainer = compose<React.ComponentType>(
 const App: React.FC  = () => {
   return (
     <HashRouter>
-    {/* <BrowserRouter> */}
+    {/* <BrowserRouter store={store}> */}
       <Provider store={store}>
         <AppContainer />
       </Provider>

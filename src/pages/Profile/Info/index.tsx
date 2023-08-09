@@ -26,9 +26,21 @@ const Info: React.FC<PropsType> = (props) => {
         <div className="description">
             <h3>Подробная информация</h3>
             { editMode 
-                ? <ProfileDataForm initialValues={props.profile} onSubmit={onSubmit} profile={props.profile}/> 
-                : <ProfileData goToEditMode={()=>{setEditMode(true)}} isOwner={props.isOwner} profile={props.profile}/>}
-            <ProfileStatusWithHooks status={props.status} updateStatus={props.updateStatus}/>
+                ? <ProfileDataForm 
+                        initialValues={props.profile} 
+                        onSubmit={onSubmit} 
+                        profile={props.profile}
+                    /> 
+                : <ProfileData 
+                    goToEditMode={()=>{setEditMode(true)}} 
+                    isOwner={props.isOwner} 
+                    profile={props.profile}
+                  />
+            }
+            <ProfileStatusWithHooks 
+                status={props.status} 
+                updateStatus={props.updateStatus}
+            />
         </div>
     )
 }
@@ -64,7 +76,9 @@ const ProfileData: React.FC<ProfileDataPropsType> = ({profile, isOwner, goToEdit
                 {Object
                     .keys(profile.contacts)
                     .map(key => {
-                    return <Contact key={key} contactTitle={key} contactValue={profile.contacts[key as keyof ContactsType]} />
+                    return <Contact key={key} 
+                                    contactTitle={key} 
+                                    contactValue={profile.contacts[key as keyof ContactsType]} />
                 })}
             </div>
         </>

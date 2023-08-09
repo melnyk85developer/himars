@@ -1,5 +1,5 @@
 import React, { Suspense, useEffect } from 'react';
-import { Routes, Route, Navigate} from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 // import { withSuspense } from '../../hoc/withSuspense';
 import Authorization, { routeMain as routeAuthorization } from '../../pages/Login/Login';
 import ProfileContainer, { routeMain as routeProfile }  from '../../pages/Profile/ProfileContainer';

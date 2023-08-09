@@ -7,9 +7,9 @@ type PropsType = {
     totalItemsCount: number 
     pageSize: number
     currentPage: number
-    onPageChanged: (pageNumber: number) => void
     users: Array<UserType>
     followingInProgress: Array<number>
+    onPageChanged: (pageNumber: number) => void
     unfollow: (userId: number)=> void
     follow: (userId: number)=> void
 }
@@ -31,7 +31,10 @@ const UsersList: React.FC<PropsType> = (props) => {
                     user={user}
                     follow={props.follow}
                     unfollow={props.unfollow}
-                    followingInProgress={props.followingInProgress} userDetailPage={undefined}                />
+                    followingInProgress={props.followingInProgress} 
+                    
+                    userDetailPage={undefined} 
+                    userId={undefined}                />
             ))}
         </div> 
     )

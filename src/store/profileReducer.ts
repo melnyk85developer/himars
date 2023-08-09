@@ -54,11 +54,11 @@ export const actions = {
     deletePost: (postId: number | null | string) => ({type: 'PROFILE/DELETE_POST', postId} as const),
     savePhotoSuccess: (photos: PhotosType) => ({type: 'PROFILE/SAVE_PHOTO_SUCCESS', photos} as const)
 }
-export const getProfile = (userId: number): ThunkType => async (dispatch) => {
+export const getProfile = (userId: string | undefined | number | null): ThunkType => async (dispatch) => {
     const data = await profileAPI.getProfile(userId);
     dispatch(actions.setProfile(data));
 }
-export const getStatus = (userId: number | null | string): ThunkType => async (dispatch) => {
+export const getStatus = (userId: string | undefined | number | null): ThunkType => async (dispatch) => {
     const data = await profileAPI.getStatus(userId);
     dispatch(actions.setStatus(data))
 }

@@ -54,7 +54,6 @@ const Messages: React.FC<PropsType> = (props) => {
                 }
             />
             {messages.length > 0 && <MessageList messages={messages}/>}
-            
             <div className="wrapTextareaMessages">
 
                 <AddMessageForm onSubmit={addNewMessage}/>
