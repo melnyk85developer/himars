@@ -37,25 +37,22 @@ const ProfileContainer: React.FC<PropsType> = (props) => {
     let userId = id
 
     const refreshProfile = (userId: string | undefined | number | null) => {
-        if(userId === undefined){
+        if(userId === ":id"){
             userId = props.authorizedUserId
-            if(!userId){
-                <Navigate to={routeLogin()} />
-            }
+            if(!userId){<Navigate to={routeLogin()}/>}
             props.getProfile(userId)
             props.getStatus(userId)
         }else{
-            console.log("Не профиль")
-            props.getProfile(userId as string | undefined | number | null)
-            props.getStatus(userId as string | undefined | number | null)
+            props.getProfile(userId as number)
+            props.getStatus(userId as number)
         }
     }
     useEffect(() => {
         refreshProfile(userId);
     }, [userId])
-    
+
     return <Profile 
-                isOwner={!userId ? true : false} 
+                isOwner={userId !== ":id" ? true : false} 
                 savePhoto={props.savePhoto}  
                 status={props.status} 
                 updateStatus={props.updateStatus} 

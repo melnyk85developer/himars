@@ -24,9 +24,10 @@ const Video = React.lazy(() => import('../../pages/Video'))
 
 const AppContent = (props: MapPropsType & DispatchPropsType) => {
     
+
     useEffect(() => {
         props.initializeAppContent()
-    }, [])
+    })
 
     if(!props.initialized){
         return <Preloader />

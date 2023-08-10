@@ -10,7 +10,7 @@ import RSidebar from "../../components/RSidebar";
 import Info from "./Info/index";
 import MyPostsContainer from "./MyPosts/MyPostsContainer";
 import Preloader from "../../components/Priloader";
-import { DispatchPropsType, PropsProfileType } from "./ProfileContainer";
+import { PropsProfileType } from "./ProfileContainer";
 import "./styles.scss";
 
 const Profile: React.FC<PropsProfileType> = (props) => {

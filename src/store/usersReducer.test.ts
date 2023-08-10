@@ -9,7 +9,7 @@ beforeEach(() => {
             {
                 id: "0", 
                 name: "Maksym 0",
-                surname: "Melnyk",
+                surname: "Melnyk 0",
                 followed: false,
                 photos: {small: null, large: null},
                 status: "status 0"
@@ -17,7 +17,7 @@ beforeEach(() => {
             {
                 id: "1", 
                 name: "Maksym 1",
-                surname: "Pupkin",
+                surname: "Pupkin 1",
                 followed: false,
                 photos: {small: null, large: null},
                 status: "status 1"
@@ -39,7 +39,7 @@ beforeEach(() => {
                 status: "status 3"
             }
         ],
-        pageSize: 100,
+        pageSize: 10,
         totalUsersCount: 0,
         currentPage: 1,
         isFetching: false,

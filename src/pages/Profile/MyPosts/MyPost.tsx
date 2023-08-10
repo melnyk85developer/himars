@@ -18,6 +18,7 @@ const MyPosts: React.FC<MapPropsType & DispatchPropsType> = (props) => {
         post={post.post} 
         like={post.like} 
         dislike={post.dislike}
+        // likeCount={post.likeCount}
     />)
 
     let onAddPost = (values: AddPostFormValuesType) => {

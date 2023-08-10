@@ -6,6 +6,7 @@ type PropsType = {
     post: string
     like: string
     dislike: string
+    // likeCount: number;
 }
 
 const Post: React.FC<PropsType> = (props) => {
@@ -20,6 +21,7 @@ const Post: React.FC<PropsType> = (props) => {
                 <div className="wrapLikes">
                     <span><p className="like">like {props.like}</p></span>
                     <span><p className="dislike">dislike {props.dislike}</p></span>
+                    {/* {props.likeCount} */}
                 </div>
             </div>
         </div>

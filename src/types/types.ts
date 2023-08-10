@@ -21,6 +21,7 @@ export type PostType = {
     post: string
     like: string
     dislike: string
+    likeCount: number
 }
 export type ContactsType = {
     github: string
