@@ -1,3 +1,5 @@
+import { FilterType } from "../store/usersReducer"
+
 export type ProfileType = {
     userId: string | undefined | number | null
     lookingForAJob: boolean
@@ -6,7 +8,6 @@ export type ProfileType = {
     contacts: ContactsType
     photos: PhotosType
     aboutMe: string
-    // newPostText: string
 }
 export type UserType = {
     id: number | null | string | undefined
@@ -15,6 +16,7 @@ export type UserType = {
     status: string
     photos: PhotosType
     followed: boolean
+    filter: FilterType
 }
 export type PostType = {
     id: string

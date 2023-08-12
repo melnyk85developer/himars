@@ -8,6 +8,7 @@ import Preloader from "../../components/Priloader";
 // import WidgetYofamiliar from "../../components/Widgets/WidgetYofamiliar";
 import { UserType } from "../../types/types";
 import "./styles.scss";
+import { FilterType } from "../../store/usersReducer";
 
 type PropsType = {
     totalUsersCount: number
@@ -19,6 +20,7 @@ type PropsType = {
     unfollow: (userId: number) => void
     follow: (userId: number) => void
     onPageChanged: (pageNumber: number) => void
+    onFilterChanged: (filter: FilterType) => void
 }
 
 const Users: React.FC<PropsType> = (props) => {
@@ -49,6 +51,7 @@ const Users: React.FC<PropsType> = (props) => {
                             pageSize={props.pageSize} 
                             totalItemsCount={props.totalUsersCount} 
                             onPageChanged={props.onPageChanged} 
+                            onFilterChanged={props.onFilterChanged}
                             currentPage={props.currentPage}
                         />}
             </div>
